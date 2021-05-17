@@ -1,0 +1,246 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>在网页中嵌入哔哩哔哩视频 | Gridea</title>
+<link rel="shortcut icon" href="https://chiperman.github.io/favicon.ico?v=1621230887700">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://chiperman.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="在网页中嵌入哔哩哔哩视频 | Gridea - Atom Feed" href="https://chiperman.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="我们在写博客时候有可能会遇到要在文章中嵌入哔哩哔哩的视频，
+这样配合文字讲解更加简单清楚，也能够给 UP 主带来一点流量。
+那么这篇网站讲解了如何在网页中使用 iframe 嵌入哔哩哔哩的视频，
+这只是我遇到后这个需求后查询了很多文章和教程..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://chiperman.github.io">
+  <img class="avatar" src="https://chiperman.github.io/images/avatar.png?v=1621230887700" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              在网页中嵌入哔哩哔哩视频
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-02-18
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>我们在写博客时候有可能会遇到要在文章中嵌入哔哩哔哩的视频，<br>
+这样配合文字讲解更加简单清楚，也能够给 UP 主带来一点流量。<br>
+那么这篇网站讲解了如何在网页中使用 iframe 嵌入哔哩哔哩的视频，<br>
+这只是我遇到后这个需求后查询了很多文章和教程得出来的集合。</p>
+<!-- more -->
+<h2 id="嵌入代码">嵌入代码</h2>
+<ol>
+<li>点击分享按钮</li>
+<li>找到嵌入代码，复制后面的代码，格式是一个 <code>&lt;iframe&gt;</code> 的标签</li>
+<li>在网页中黏贴这段代码</li>
+</ol>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/chiperman/Photos-storage@master/blog/2020/bilibili/Snipaste_2020-02-19_11-48-19.png" alt="image" loading="lazy"></figure>
+<p>以上图为例，你只需要在网页中嵌入这段代码</p>
+<pre><code class="language-html">&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=39367828&amp;cid=69177312&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;
+</code></pre>
+<p>即可看到一个播放窗口，如下就是播放窗口</p>
+<iframe src="//player.bilibili.com/player.html?aid=39367828&cid=69177312&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<h2 id="缺点">缺点</h2>
+<p>可是发现播放窗口很迷你而且也只能暂停和播放，也缺少了几个核心的功能点：</p>
+<ol>
+<li>开启和关闭弹幕功能</li>
+<li>选择清晰度功能</li>
+<li>循环洗脑功能</li>
+<li>全屏功能</li>
+<li>分享功能</li>
+<li>一件跳转到哔哩哔哩观看</li>
+</ol>
+<p>缺少的这几个功能会让浏览者的观看体验非常糟糕，那么我们就来想办法完善一下。</p>
+<h2 id="增加-css-文件以及一个嵌套">增加 CSS 文件以及一个嵌套</h2>
+<p>首先添加如下 <code>css</code> 代码</p>
+<pre><code class="language-css">.aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+}
+
+.aspect-ratio iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+</code></pre>
+<p>然后把哔哩哔哩的 <code>&lt;iframe&gt;</code> 代码嵌入到 <code>&lt;div&gt;</code> 标签中</p>
+<pre><code class="language-html">&lt;div class=&quot;aspect-ratio&quot;&gt;
+        &lt;iframe src=&quot;//player.bilibili.com/player.html?aid=39367828&amp;cid=69177312&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+</code></pre>
+<p>效果如下所示</p>
+<div class="aspect-ratio">
+        <iframe src="//player.bilibili.com/player.html?aid=39367828&cid=69177312&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+</div>
+<p>但是，这个样子就只有视频清晰度只有 360P，不能切换清晰度，虽然有切换按钮但是会直接跳转到哔哩哔哩的页面，以下是解决办法。</p>
+<h2 id="切换清晰度">切换清晰度</h2>
+<p>只需要在链接地址末尾的 <code>page=1</code> 后面加上 <code>&amp;high_quality=1</code> 就可以让清晰度变为 480P，如果你还登陆过哔哩哔哩的网站，那么默认为你设置的最高清晰度。</p>
+<pre><code class="language-html">&lt;div class=&quot;aspect-ratio&quot;&gt;
+        &lt;iframe src=&quot;//player.bilibili.com/player.html?aid=39367828&amp;cid=69177312&amp;page=1&amp;high_quality=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="最终效果">最终效果</h2>
+<p>🎉Enjoy the Vedio🎬</p>
+<p>🎉Enjoy the Beautiful World🌏<br>
+<br></p>
+<div class="aspect-ratio">
+<iframe src="//player.bilibili.com/player.html?aid=39367828&cid=69177312&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+</div>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%B5%8C%E5%85%A5%E4%BB%A3%E7%A0%81">嵌入代码</a></li>
+<li><a href="#%E7%BC%BA%E7%82%B9">缺点</a></li>
+<li><a href="#%E5%A2%9E%E5%8A%A0-css-%E6%96%87%E4%BB%B6%E4%BB%A5%E5%8F%8A%E4%B8%80%E4%B8%AA%E5%B5%8C%E5%A5%97">增加 CSS 文件以及一个嵌套</a></li>
+<li><a href="#%E5%88%87%E6%8D%A2%E6%B8%85%E6%99%B0%E5%BA%A6">切换清晰度</a></li>
+<li><a href="#%E6%9C%80%E7%BB%88%E6%95%88%E6%9E%9C">最终效果</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://chiperman.github.io/lines/">
+              <h3 class="post-title">
+                Lines
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  
+  <a class="rss" href="https://chiperman.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

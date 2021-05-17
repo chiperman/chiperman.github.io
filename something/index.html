@@ -1,0 +1,198 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Something | Gridea</title>
+<link rel="shortcut icon" href="https://chiperman.github.io/favicon.ico?v=1621230887700">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://chiperman.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Something | Gridea - Atom Feed" href="https://chiperman.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+Revenge is a dish best served cold
+
+
+Hard Time
+
+人心里都有坎。嘴上说没有的只是血液内酒精浓度太低而已。 相比于亲人间的生离死别，其他的事情都说不上什么“过不去的坎”。
+
+JUMP
+
+熊熊的烈..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://chiperman.github.io">
+  <img class="avatar" src="https://chiperman.github.io/images/avatar.png?v=1621230887700" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Something
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-05-22
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://cdn.jsdelivr.net/gh/chiperman/Photos-storage@master/blog/Cover-imgs/Man-in-the-North-Pole.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <blockquote>
+<p>Revenge is a dish best served cold</p>
+</blockquote>
+<!-- more -->
+<p><strong><center>Hard Time</center></strong></p>
+<blockquote>
+<p>人心里都有坎。嘴上说没有的只是血液内酒精浓度太低而已。 相比于亲人间的生离死别，其他的事情都说不上什么“过不去的坎”。</p>
+</blockquote>
+<p><strong><center>JUMP</center></strong></p>
+<blockquote>
+<p>熊熊的烈火，滚滚的浓烟，绝望的一跳</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/2019/something/jump.jpg" alt="jump" loading="lazy"></figure>
+<p><strong><center>Wonder Boy</center></strong></p>
+<blockquote>
+<p>善良一点儿，因为每个人都在与人生苦战。</p>
+</blockquote>
+<p>——<strong>奇迹男孩</strong></p>
+<p><strong><center>Patience</center></strong></p>
+<blockquote>
+<p>事不过三用在任何事上都挺合适的。</p>
+</blockquote>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://chiperman.github.io/UWP/">
+              <h3 class="post-title">
+                通过 CMD 为 Windows 10 UWP 应用设置代理
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  
+  <a class="rss" href="https://chiperman.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

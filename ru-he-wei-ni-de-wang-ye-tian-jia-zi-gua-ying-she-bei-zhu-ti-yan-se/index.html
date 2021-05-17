@@ -1,0 +1,196 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>如何为你的网页添加自适应设备主题颜色 | Gridea</title>
+<link rel="shortcut icon" href="https://chiperman.github.io/favicon.ico?v=1621230887700">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://chiperman.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="如何为你的网页添加自适应设备主题颜色 | Gridea - Atom Feed" href="https://chiperman.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="现在的📱手机、💻电脑等电子设备都以及开始推广夜间模式，
+那么你的博客还是白色么？又或者是有一个切换按钮🔘？
+那也太麻烦了，本篇文章教你如何让你的博客自动判断设备的主题色，
+自动切换主题。
+
+其实很简单，在你给你的博客写 css 的时候..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://chiperman.github.io">
+  <img class="avatar" src="https://chiperman.github.io/images/avatar.png?v=1621230887700" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              如何为你的网页添加自适应设备主题颜色
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-02-28
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://cdn.jsdelivr.net/gh/chiperman/Blog-photos@master/blog/Cover-imgs/lego.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>现在的📱手机、💻电脑等电子设备都以及开始推广夜间模式，<br>
+那么你的博客还是白色么？又或者是有一个切换按钮🔘？<br>
+那也太麻烦了，本篇文章教你如何让你的博客自动判断设备的主题色，<br>
+自动切换主题。</p>
+<!-- more -->
+<p>其实很简单，在你给你的博客写 <code>css</code> 的时候，首先写出两个主题色、分别是<strong>白天主题</strong>和<strong>夜间主题</strong>两个主题。</p>
+<p>加入你的白天主题是：</p>
+<pre><code class="language-css">@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #FFF;
+  }
+}
+</code></pre>
+<p>那么整个网页的 <code>body</code> 部分就是呈现白色。</p>
+<p>如果要让你的网页在夜间模式下呈现黑色，<br>
+那么，为你只需要在的夜间主题外面嵌套一个</p>
+<pre><code class="language-css">@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+  }
+}
+</code></pre>
+<p>那么就大功告成了，这个博客已经部署好了，你可以试着切换一下你的设备主题色来看看效果。</p>
+<hr>
+<p>本文的封面图片来自 Unspalsh 的 <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@benballaschottner?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Bence Balla-Schottner"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Bence Balla-Schottner</span></a></p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://chiperman.github.io/zhi-nan/">
+              <h3 class="post-title">
+                中文文案排版指「北」
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  
+  <a class="rss" href="https://chiperman.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>通过 CMD 为 Windows 10 UWP 应用设置代理 | Gridea</title>
+<link rel="shortcut icon" href="https://chiperman.github.io/favicon.ico?v=1621230887700">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://chiperman.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="通过 CMD 为 Windows 10 UWP 应用设置代理 | Gridea - Atom Feed" href="https://chiperman.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="👏通过 CMD 解决为 Windows 10 UWP 应用设置代理的问题
+
+1.通过注册表获取 UWP 应用的 SID
+首先通过 Win + R 「运行」窗口，输入 Regedit 从而打开注册表。
+定位到
+\HKEY_CURRENT_U..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://chiperman.github.io">
+  <img class="avatar" src="https://chiperman.github.io/images/avatar.png?v=1621230887700" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              通过 CMD 为 Windows 10 UWP 应用设置代理
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-05-21
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>👏通过 CMD 解决为 Windows 10 UWP 应用设置代理的问题</p>
+<!--more-->
+<h2 id="1通过注册表获取-uwp-应用的-sid">1.通过注册表获取 UWP 应用的 SID</h2>
+<p>首先通过 <code>Win + R</code> 「运行」窗口，输入 <code>Regedit</code> 从而打开注册表。<br>
+定位到</p>
+<pre><code>\HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Mappings
+</code></pre>
+<p>在注册表右侧 <code>DisplayName</code> 中找到相对应的应用名称</p>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/chiperman/Blog-photos/blog/2019/uwp/SID.png" alt="SID" loading="lazy"></figure>
+<p>注册表左侧的 <code>S-X-XX……</code> 则是这个应用的 SID值</p>
+<h2 id="2打开-cmd-面板">2.打开 CMD 面板</h2>
+<p>以管理员身份打开「运行」窗口<br>
+输入 <code>CheckNetIsolation.exe loopbackexempt -a -p=SID</code>，<br>
+用你刚才在注册表中找到的 <code>SID</code> 值替换上面语句中的 <code>SID</code>，并且按下 <code>Enter</code> 即可。</p>
+<figure data-type="image" tabindex="2"><img src="https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/2019/uwp/cmd.png" alt="cmd" loading="lazy"></figure>
+<p>这个时候打开 <strong>UWP</strong> 应用即可快乐的上网了。</p>
+<h2 id="3最后">3.最后</h2>
+<p>🎉<strong>ENJOY THE SHOW!</strong></p>
+<figure data-type="image" tabindex="3"><img src="https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/2019/uwp/sucess.png" alt="sucess" loading="lazy"></figure>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#1%E9%80%9A%E8%BF%87%E6%B3%A8%E5%86%8C%E8%A1%A8%E8%8E%B7%E5%8F%96-uwp-%E5%BA%94%E7%94%A8%E7%9A%84-sid">1.通过注册表获取 UWP 应用的 SID</a></li>
+<li><a href="#2%E6%89%93%E5%BC%80-cmd-%E9%9D%A2%E6%9D%BF">2.打开 CMD 面板</a></li>
+<li><a href="#3%E6%9C%80%E5%90%8E">3.最后</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://chiperman.github.io/Iron-Man/">
+              <h3 class="post-title">
+                Iron Man
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  
+  <a class="rss" href="https://chiperman.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

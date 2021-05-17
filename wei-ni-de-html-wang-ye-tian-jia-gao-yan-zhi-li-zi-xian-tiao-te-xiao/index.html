@@ -1,0 +1,228 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>为你的 HTML 网页添加高颜值粒子线条特效 | Gridea</title>
+<link rel="shortcut icon" href="https://chiperman.github.io/favicon.ico?v=1621230887700">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://chiperman.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="为你的 HTML 网页添加高颜值粒子线条特效 | Gridea - Atom Feed" href="https://chiperman.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="超高颜值粒子特效背景添加教程
+
+
+一个基于 html5 canvas 绘制的网页背景效果
+
+你也可以直接访问这个项目的 Github[1] 进行查看文档。
+或者访问演示网址进行在线查看。
+这篇文章已经使用了这个项目，你可以直接预览效果。
+使..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://chiperman.github.io">
+  <img class="avatar" src="https://chiperman.github.io/images/avatar.png?v=1621230887700" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              为你的 HTML 网页添加高颜值粒子线条特效
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-10-14
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>超高颜值粒子特效背景添加教程</p>
+<!-- more -->
+<blockquote>
+<p>一个基于 html5 canvas 绘制的网页背景效果</p>
+</blockquote>
+<p>你也可以直接访问这个项目的 <a href="https://github.com/hustcc/canvas-nest.js/blob/master/README-zh.md">Github</a><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> 进行查看文档。<br>
+或者访问<a href="https://git.hust.cc/canvas-nest.js/">演示网址</a>进行在线查看。<br>
+<s>这篇<span style="color: red">文章</span>已经使用了这个项目，你可以直接预览效果。</s></p>
+<h2 id="使用方法">使用方法</h2>
+<h3 id="插入代码">插入代码</h3>
+<p>将这段代码插入你 HTML 的 <body> 和 </body> 之间。</p>
+<ol>
+<li>这是项目原始代码：</li>
+</ol>
+<pre><code class="language-javascript">&lt;script type=&quot;text/javascript&quot; src=&quot;canvas-nest.min,js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>如果使用 Github 项目中的代码，需要提前下载 <code>canvas-nest.min.js</code> 这个 <code>js</code> 文件。</p>
+<ol start="2">
+<li>或者使用 <a href="https://www.bootcdn.cn/canvas-nest.js/">bootcdn</a><sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> 加速后的：</li>
+</ol>
+<pre><code class="language-javascript">&lt;script src=&quot;//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p><span style="color: red">注意请勿插入到 <code>&lt;head&gt;</code> 和 <code>&lt;/head&gt;</code> 之间</span></p>
+<h3 id="配置">配置</h3>
+<ol>
+<li><strong>color</strong>: 线条颜色, 默认: <code>'0,0,0'</code> ；三个数字分别为(R,G,B)，注意用,分割</li>
+<li><strong>pointColor</strong>: 交点颜色, 默认: <code>'0,0,0'</code> ；三个数字分别为(R,G,B)，注意用,分割</li>
+<li><strong>opacity</strong>: 线条透明度（0~1）, 默认: <code>0.5</code></li>
+<li><strong>count</strong>: 线条的总数量, 默认: <code>150</code></li>
+<li><strong>zIndex</strong>: 背景的z-index属性，css属性用于控制所在层的位置, 默认: <code>-1</code></li>
+</ol>
+<h2 id="example">Example</h2>
+<pre><code class="language-javascript">&lt;script type=&quot;text/javascript&quot; color=&quot;0,0,255&quot; opacity='0.7' zIndex=&quot;-2&quot; count=&quot;99&quot; src=&quot;dist/canvas-nest.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><a href="https://github.com/hustcc/canvas-nest.js/blob/master/README-zh.md">Github 项目地址</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><a href="https://www.bootcdn.cn/canvas-nest.js/">bootcdn 官网</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</a>
+<ul>
+<li><a href="#%E6%8F%92%E5%85%A5%E4%BB%A3%E7%A0%81">插入代码</a></li>
+<li><a href="#%E9%85%8D%E7%BD%AE">配置</a></li>
+</ul>
+</li>
+<li><a href="#example">Example</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://chiperman.github.io/no-result-defined-for-action-actionloginaction-and-result-success/">
+              <h3 class="post-title">
+                No result defined for action action.LoginAction and result success
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  
+  <a class="rss" href="https://chiperman.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
