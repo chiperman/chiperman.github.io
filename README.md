@@ -6,4 +6,4 @@
 
  评论用的是 [Valine](https://valine.js.org/) 并且配合 [LeanCloud 国际版](https://leancloud.cn/dashboard/login.html#/signin) 进行后台管理
 
- 原主题是：[Pan](https://github.com/shanbufun/gridea-theme-pan) ，但是目前使用的是在此基础上的自己 [魔改版本](https://github.com/chiperman/gridea-theme-pan-xiaox)
+主题使用的是自己制作的 [Porky](https://github.com/chiperman/gridea-theme-porky)
