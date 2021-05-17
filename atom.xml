@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://chiperman.github.io</id>
+    <title>Gridea</title>
+    <updated>2021-05-17T05:16:31.902Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://chiperman.github.io"/>
+    <link rel="self" href="https://chiperman.github.io/atom.xml"/>
+    <logo>https://chiperman.github.io/images/avatar.png</logo>
+    <icon>https://chiperman.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2021, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[清理 Netflix 的使用痕迹]]></title>
+        <id>https://chiperman.github.io/netflix/</id>
+        <link href="https://chiperman.github.io/netflix/">
+        </link>
+        <updated>2019-11-12T09:20:46.000Z</updated>
+        <summary type="html"><![CDATA[<p>现在网上很多 Netflix 的共享账号卖，但是如果操作不当容易被封禁</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>现在网上很多 Netflix 的共享账号卖，但是如果操作不当容易被封禁</p>
+<!-- more -->
+<h2 id="重新安装-netflix-app">重新安装 Netflix App</h2>
+<ol>
+<li>保证你的电脑、手机、电视盒子、iPad等设备都卸载并且重新安装 <code>Netflix App</code>。</li>
+<li>如果使用的是浏览器，那么不管是电脑浏览器还是手机浏览器都得清楚使用痕迹，可以直接打开这个<a href="http://netflix.com/clearcookies">网址</a>,然后等待几秒钟重新启动即可。</li>
+<li>安卓使用 APP 的时候绝对不可打开 APP 内“更多”里的“账户”，否则极其容易会造成账户失效。</li>
+<li>苹果使用 APP 的时候绝对不可打开 APP 内“更多”里的“隐私”，否则极其容易会造成账户失效。</li>
+</ol>
+<p>你也可以访问<a href="https://netflix.yt/thread-11.htm">原网址</a>进行更加详细的查看。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[No result defined for action action.LoginAction and result success]]></title>
+        <id>https://chiperman.github.io/no-result-defined-for-action-actionloginaction-and-result-success/</id>
+        <link href="https://chiperman.github.io/no-result-defined-for-action-actionloginaction-and-result-success/">
+        </link>
+        <updated>2019-10-11T15:42:07.000Z</updated>
+        <summary type="html"><![CDATA[<p>最近用 structs 2 的时候遇到的报错问题</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>最近用 structs 2 的时候遇到的报错问题</p>
+<!-- more -->
+<pre><code>No result defined for action action.LoginAction and result success
+</code></pre>
+<p>写一个简单的登陆功能，然后 tomcat 报这个错误，找了半天最后找到一个方法。</p>
+<p>最开始在 <code>struts.xml</code> 文件中，第一个 action 的 name 是 <code>login</code></p>
+<pre><code>&lt;action name=&quot;login&quot;  class=&quot;action.LoginAction&quot;&gt;
+		&lt;result name=&quot;success&quot;&gt;/welcome.jsp&lt;/result&gt;
+		&lt;result name=&quot;input&quot;&gt;/index.jsp&lt;/result&gt;
+&lt;/action&gt;
+</code></pre>
+<p>然后 <code>index.jsp</code> 文件是这样的</p>
+<pre><code>&lt;form action=&quot;login.action&quot; method=&quot;post&quot;&gt;
+	姓名：&lt;input type=&quot;text&quot; name=&quot;name&quot;/&gt;&lt;br&gt;
+   	电话：&lt;input type=&quot;text&quot; name=&quot;mobile&quot;/&gt;&lt;br&gt;
+	邮箱：&lt;input type=&quot;text&quot; name=&quot;mail&quot;/&gt;&lt;br&gt;
+	&lt;input type=&quot;submit&quot; value=&quot;login&quot;/&gt;
+&lt;/form&gt;
+</code></pre>
+<p>运行后点击<code>提交</code>按钮就显示这个错误<br>
+只需要把 <code>struts.xml</code> 中的 name 修改为 <code>login1</code></p>
+<pre><code>&lt;action name=&quot;login1&quot;  class=&quot;action.LoginAction&quot;&gt;
+</code></pre>
+<p>还有 <code>index.jsp</code> 的 action 修改为 <code>login1.action</code></p>
+<pre><code>&lt;form action=&quot;login1.action&quot; method=&quot;post&quot;&gt;
+</code></pre>
+<hr>
+<p>总的来说不能用 <code>login</code>，改为 <code>Login</code> 或者 <code>login1</code> 都可以</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[🍚 平凡料理]]></title>
+        <id>https://chiperman.github.io/pin-fan-liao-li/</id>
+        <link href="https://chiperman.github.io/pin-fan-liao-li/">
+        </link>
+        <updated>2019-06-16T00:21:54.000Z</updated>
+        <summary type="html"><![CDATA[<p>🍕 🍔 🍟 🌭 🥤 🍿 🥚 🍳 🍞 🧀 🥪 🌮 🍖 🍗 🥩 🍱 🍙 🍚 🍣 🍤 🍋 🍒</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>🍕 🍔 🍟 🌭 🥤 🍿 🥚 🍳 🍞 🧀 🥪 🌮 🍖 🍗 🥩 🍱 🍙 🍚 🍣 🍤 🍋 🍒</p>
+<!-- more -->
+<p>想一個人吃火鍋，<br>
+想一個人看電影，<br>
+想一個人在家裡，<br>
+睡到自然醒起來，<br>
+早午飯就吃「世界上最好吃的煎雞蛋🍳」吧。<br>
+然後，<br>
+做喜歡的事情，<br>
+可以是敲代碼💻，<br>
+也可以是讀自己喜歡的書📘，<br>
+還可以是在海拉爾大陸上騎馬、摸魚🎮。<br>
+中午就吃「番茄🍅意麵🍝」，<br>
+簡單方便，端上桌。<br>
+打開 Netflix 開始追《Stranger Things》，<br>
+冰可樂🥤可不能少，<br>
+如果還有薯條🍟和芝士漢堡🍔那就更棒了！<br>
+之後一覺睡到下午 5-6 點，<br>
+天色也暗了，<br>
+然後做一份「平凡料理」，<br>
+蒜香牛排飯就挺好。<br>
+繼續自己的世界。<br>
+半夜要是餓了就吃「一片披薩🍕」！<br>
+享受寧靜和孤獨。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Martian]]></title>
+        <id>https://chiperman.github.io/martian/</id>
+        <link href="https://chiperman.github.io/martian/">
+        </link>
+        <updated>2019-05-24T04:48:46.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>火锅可以一个人吃，</p>
+<p>电影可以一个人看，</p>
+<p>夜路可以一个人走，</p>
+<p>超市可以一个人逛，</p>
+<p>甚至连医院都可以一个人去。</p>
+<p>开心的日常小事自己知道就好，</p>
+<p>在意识到自己的热情对于别人来说是一种负担之后，</p>
+<p>那么一切就很好解决了。</p>
+</blockquote>
+<p><strong>Life is hard, but it is also beautiful.</strong></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NOMO]]></title>
+        <id>https://chiperman.github.io/nomo/</id>
+        <link href="https://chiperman.github.io/nomo/">
+        </link>
+        <updated>2019-05-23T14:45:44.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>「照片还是胶片的好。胶片在冲洗时会湿一次。这很重要。」</p>
+</blockquote>
+<p>——Nobuyoshi Araki</p>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>「照片还是胶片的好。胶片在冲洗时会湿一次。这很重要。」</p>
+</blockquote>
+<p>——Nobuyoshi Araki</p>
+<!-- more -->
+<blockquote>
+<p>照片的好处在于它不会改变，尽管可能已经物是人非。</p>
+</blockquote>
+<p>——Andy Warhol</p>
+<blockquote>
+<p>今天一切都存在于照片之中。</p>
+</blockquote>
+<p>——Susan Sontag</p>
+<blockquote>
+<p>创造力的一个重要方面就是不要害怕失败。</p>
+</blockquote>
+<p>——Edwin Land</p>
+<blockquote>
+<p>摄影，是数量；数量，是欲望。</p>
+</blockquote>
+<p>——Daido Moriyama</p>
+<blockquote>
+<p>你不是在单纯的拍照，而是在创作。</p>
+</blockquote>
+<p>——Ansel Adams</p>
+]]></content>
+    </entry>
+</feed>
