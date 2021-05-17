@@ -2,22 +2,21 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Hello 👏 World | Gridea</title>
+<title>Android 开发设置圆角图片 | Gridea</title>
 <link rel="shortcut icon" href="https://chiperman.github.io/favicon.ico?v=1621230581217">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://chiperman.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Hello 👏 World | Gridea - Atom Feed" href="https://chiperman.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="Android 开发设置圆角图片 | Gridea - Atom Feed" href="https://chiperman.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="Everyone has depression😶
-Who am I 🎉?
-I am the onwer of the Blog.👓
-I love 💻、🎮、🎬 and Science and technology ！
+    <meta name="description" content="如何在 Android 开发中给图片设置圆角
 
-About..." />
-    <meta name="keywords" content="" />
+引入库文件
+在 build.gradle 里面的 dependencies 引入这个
+implementation 'com.makeramen:roundedimageview:2.3.0'..." />
+    <meta name="keywords" content="Android,Code" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -79,65 +78,53 @@ About..." />
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              Hello 👏 World
+              Android 开发设置圆角图片
             </h2>
             <div class="post-info">
               <span>
-                2019-01-25
+                2019-09-14
               </span>
               <span>
-                2 min read
+                1 min read
               </span>
+              
+                <a href="https://chiperman.github.io/tag/hKlyTv_Ut6/" class="post-tag">
+                  # Android
+                </a>
+              
+                <a href="https://chiperman.github.io/tag/7y5e0iwW03/" class="post-tag">
+                  # Code
+                </a>
               
             </div>
             
-              <img class="post-feature-image" src="https://cdn.jsdelivr.net/gh/chiperman/Photos-storage@master/blog/Cover-imgs/zelda.jpg" alt="">
-            
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p><strong>Everyone has depression😶</strong></p>
-<h2 id="who-am-i">Who am I 🎉?</h2>
-<p>I am the onwer of the Blog.👓<br>
-I love 💻、🎮、🎬 and <strong>Science and technology ！</strong></p>
-<hr>
-<h2 id="about-me">About Me 🙄!</h2>
-<p>A <strong>Nintendo Switch player</strong> 🎮 who is obsessed with 「The Legend of Zelda: Breath of the Wild」<br>
-<strong>Smartisan 🅣</strong> - 锤友<br>
-每一个现代人都应该拥有一个降噪耳机🎧 - 机械键盘⌨<br>
-Less,But Better - simplify<br>
-<strong>「<span style="color: #005BAE">君の名は。</span>」-「<span style="color: #00CDFF">天気の子</span>」-「<span style="color: #3D59A8">穿越时空的少女</span>」- 「<span style="color:#E2A0D0">我想吃掉你的胰脏</span>」-「<span style="color: red">Iron Man</span>」</strong><br>
-<span style="color: red">Red</span> - <span style="color: #E2A0D0">Pink</span> - <span style="color: #AE81FF">Purple</span> - <span style="color:#00CDFF">SkyBlue</span><br>
-<strong>悲观</strong>的乐观主义。<br>
-<strong>「MINIMALISM」- Less is more</strong><br>
-<strong>「Coca-Cola」</strong> 🥤 forever !<br>
-<strong>「外貌协会」</strong>：工业设计第一，软件体验第二，硬件配置第三<br>
-「<strong>非处女座</strong>」OCD<br>
-「<strong>及时止损</strong>」：情感、投资、娱乐都应该「及时止损」<br>
-热爱 <strong>「独立」</strong> 游戏<br>
-喜欢一切 <strong>「可爱」</strong> 的东西<br>
-社交恐惧症 - 看人。<br>
-<strong>Cold-blooded person without feelings.</strong></p>
-<hr>
-<h2 id="contributions-chart">Contributions Chart !</h2>
-<img src="https://ghchart.rshah.org/EA4C89/chiperman" />
-<hr>
-<h2 id="个人网址导航">个人网址导航</h2>
-<p>用阿里云轻量服务器搭了一个网站，用来记录了一些个人的书签还有一些有趣的网站，可视化效果更好。（已经部署到 Github 中使用静态网页搭配 Gridea 来进行后台添加）</p>
-<center>
-<ul class="links">
-<li><a href="https://chiperman.github.io/webstack" target="_blank" rel="noopener noreferrer">XiaoX's Bookmark</a></li>
-</ul>
-</center>
+                <p>如何在 Android 开发中给图片设置圆角</p>
+<!-- more -->
+<h2 id="引入库文件">引入库文件</h2>
+<p>在 <code>build.gradle</code> 里面的 <code>dependencies</code> 引入这个</p>
+<pre><code>implementation 'com.makeramen:roundedimageview:2.3.0'
+</code></pre>
+<h2 id="在-xml-中使用这段代码">在 xml 中使用这段代码</h2>
+<pre><code>&lt;com.makeramen.roundedimageview.RoundedImageView
+	android:layout_width=&quot;match_parent&quot;
+	android:layout_height=&quot;90dp&quot;
+	android:layout_columnSpan=&quot;2&quot;
+	android:layout_marginTop=&quot;38dp&quot;
+	android:src=&quot;@drawable/weibo&quot;
+	app:riv_border_color=&quot;#FFFFFF&quot;
+	app:riv_border_width=&quot;0dip&quot;
+	app:riv_corner_radius=&quot;20dip&quot; /&gt;
+</code></pre>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#who-am-i">Who am I 🎉?</a></li>
-<li><a href="#about-me">About Me 🙄!</a></li>
-<li><a href="#contributions-chart">Contributions Chart !</a></li>
-<li><a href="#%E4%B8%AA%E4%BA%BA%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA">个人网址导航</a></li>
+<li><a href="#%E5%BC%95%E5%85%A5%E5%BA%93%E6%96%87%E4%BB%B6">引入库文件</a></li>
+<li><a href="#%E5%9C%A8-xml-%E4%B8%AD%E4%BD%BF%E7%94%A8%E8%BF%99%E6%AE%B5%E4%BB%A3%E7%A0%81">在 xml 中使用这段代码</a></li>
 </ul>
 </li>
 </ul>
