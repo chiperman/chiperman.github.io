@@ -5,11 +5,11 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>「IF it is fine tomorrow.」 | chiperman</title>
-<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<link rel="shortcut icon" href="https://chiperman.github.io/favicon.ico">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
   integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
-<link rel="stylesheet" href="http://localhost:4000/styles/main.css">
-<link rel="apple-touch-icon" href="http://localhost:4000/favicon.ico">
+<link rel="stylesheet" href="https://chiperman.github.io/styles/main.css">
+<link rel="apple-touch-icon" href="https://chiperman.github.io/favicon.ico">
 <meta name="apple-mobile-web-app-title" content="XiaoX 博客">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -25,6 +25,17 @@
 <script src="media/scripts/index.js"></script>
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139717115-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'UA-139717115-1');
+</script>
+
 </head>
 
 <body>
@@ -33,7 +44,7 @@
       <div class="nav-bar">
   <!-- 首页菜单 -->
   <div class="menu-container">
-    <a href="http://localhost:4000/index.html" target="_parent" class="home">
+    <a href="https://chiperman.github.io/index.html" target="_parent" class="home">
       <svg class="home-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
         <path fill="#fff" d="M12 14l9-5-9-5-9 5 9 5z"></path>
         <path fill="#fff"
@@ -75,7 +86,7 @@
 
 
 
-      <a href="http://localhost:4000/atom.xml" target="_blank" class="rss">
+      <a href="https://chiperman.github.io/atom.xml" target="_blank" class="rss">
         <span class="rss-title">RSS</span>
         <i class="iconfont icon-rss"></i>
       </a>
@@ -184,7 +195,7 @@
           
           <div class="prev-post">
             <div class="prev">上一篇</div>
-            <a href="http://localhost:4000/nomo/">
+            <a href="https://chiperman.github.io/nomo/">
               <h3 class="post-title">
                 <span>
                   NOMO
@@ -198,7 +209,7 @@
           
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="http://localhost:4000/something/">
+            <a href="https://chiperman.github.io/something/">
               <h3 class="post-title">
                 <span>
                   Something
@@ -213,6 +224,24 @@
       
 
       <div class="valine">
+        
+        <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+
+<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'BLubAKVaXmbRyAT7TV6B6wYU-MdYXbMMI',
+		appKey: 'lWwtGpLDC40rEiOPVErmwy5N',
+		avatar: '',
+		visitor: true,
+		
+                placeholder: 'Please leave your comments...'
+        
+	});
+</script>
         
       </div>
 
