@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://chiperman.github.io</id>
+    <id>http://localhost:4000</id>
     <title>chiperman</title>
-    <updated>2021-05-18T06:20:31.943Z</updated>
+    <updated>2021-05-18T07:13:40.777Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://chiperman.github.io"/>
-    <link rel="self" href="https://chiperman.github.io/atom.xml"/>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
     <subtitle>Stay cool, stay alone😶.</subtitle>
-    <logo>https://chiperman.github.io/images/avatar.png</logo>
-    <icon>https://chiperman.github.io/favicon.ico</icon>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2021, chiperman</rights>
     <entry>
         <title type="html"><![CDATA[2020]]></title>
-        <id>https://chiperman.github.io/2020/</id>
-        <link href="https://chiperman.github.io/2020/">
+        <id>http://localhost:4000/2020/</id>
+        <link href="http://localhost:4000/2020/">
         </link>
         <updated>2020-12-31T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>🎉Review my 2020.</p>
@@ -192,8 +192,8 @@ YouTube 都是会直接秒开。 <a href="http://fast.com/">Fast.com</a> 测速�
     </entry>
     <entry>
         <title type="html"><![CDATA[如何为你的网页添加自适应设备主题颜色]]></title>
-        <id>https://chiperman.github.io/ru-he-wei-ni-de-wang-ye-tian-jia-zi-gua-ying-she-bei-zhu-ti-yan-se/</id>
-        <link href="https://chiperman.github.io/ru-he-wei-ni-de-wang-ye-tian-jia-zi-gua-ying-she-bei-zhu-ti-yan-se/">
+        <id>http://localhost:4000/ru-he-wei-ni-de-wang-ye-tian-jia-zi-gua-ying-she-bei-zhu-ti-yan-se/</id>
+        <link href="http://localhost:4000/ru-he-wei-ni-de-wang-ye-tian-jia-zi-gua-ying-she-bei-zhu-ti-yan-se/">
         </link>
         <updated>2020-02-28T04:24:42.000Z</updated>
         <summary type="html"><![CDATA[<p>现在的📱手机、💻电脑等电子设备都以及开始推广夜间模式，<br>
@@ -230,8 +230,8 @@ YouTube 都是会直接秒开。 <a href="http://fast.com/">Fast.com</a> 测速�
     </entry>
     <entry>
         <title type="html"><![CDATA[中文文案排版指「北」]]></title>
-        <id>https://chiperman.github.io/zhi-nan/</id>
-        <link href="https://chiperman.github.io/zhi-nan/">
+        <id>http://localhost:4000/zhi-nan/</id>
+        <link href="http://localhost:4000/zhi-nan/">
         </link>
         <updated>2020-02-24T04:12:36.000Z</updated>
         <summary type="html"><![CDATA[<p>这是我在网络上找到最棒的一个「中文文案排版指『北』」，<br>
@@ -622,8 +622,8 @@ mzlogin 则认为两者之间<strong>不需要增加空格</strong>，<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[《Linux  就该这么学》学习笔记]]></title>
-        <id>https://chiperman.github.io/linux-study-note/</id>
-        <link href="https://chiperman.github.io/linux-study-note/">
+        <id>http://localhost:4000/linux-study-note/</id>
+        <link href="http://localhost:4000/linux-study-note/">
         </link>
         <updated>2020-02-19T09:05:13.000Z</updated>
         <summary type="html"><![CDATA[<p>这个系列主要记录了 Linux 的学习过程中我觉得有必要记录的知识点</p>
@@ -1635,8 +1635,8 @@ Last login: Sun Feb 16 05:33:07 EST 2020 on :0
     </entry>
     <entry>
         <title type="html"><![CDATA[在网页中嵌入哔哩哔哩视频]]></title>
-        <id>https://chiperman.github.io/zai-wang-ye-zhong-qian-ru-bi-li-bi-li-shi-pin/</id>
-        <link href="https://chiperman.github.io/zai-wang-ye-zhong-qian-ru-bi-li-bi-li-shi-pin/">
+        <id>http://localhost:4000/zai-wang-ye-zhong-qian-ru-bi-li-bi-li-shi-pin/</id>
+        <link href="http://localhost:4000/zai-wang-ye-zhong-qian-ru-bi-li-bi-li-shi-pin/">
         </link>
         <updated>2020-02-18T10:51:40.000Z</updated>
         <summary type="html"><![CDATA[<p>我们在写博客时候有可能会遇到要在文章中嵌入哔哩哔哩的视频，<br>
@@ -1716,8 +1716,8 @@ Last login: Sun Feb 16 05:33:07 EST 2020 on :0
     </entry>
     <entry>
         <title type="html"><![CDATA[Lines]]></title>
-        <id>https://chiperman.github.io/lines/</id>
-        <link href="https://chiperman.github.io/lines/">
+        <id>http://localhost:4000/lines/</id>
+        <link href="http://localhost:4000/lines/">
         </link>
         <updated>2020-02-08T05:30:54.000Z</updated>
         <summary type="html"><![CDATA[<blockquote>
@@ -1790,8 +1790,8 @@ No feeling is final.<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[自定义 PAC 规则]]></title>
-        <id>https://chiperman.github.io/zi-ding-yi-pac-gui-ze/</id>
-        <link href="https://chiperman.github.io/zi-ding-yi-pac-gui-ze/">
+        <id>http://localhost:4000/zi-ding-yi-pac-gui-ze/</id>
+        <link href="http://localhost:4000/zi-ding-yi-pac-gui-ze/">
         </link>
         <updated>2020-01-31T07:16:59.000Z</updated>
         <summary type="html"><![CDATA[<p>适用于想要自己添加并且编辑自己的 PAC 规则的人</p>
@@ -1842,8 +1842,8 @@ No feeling is final.<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[Ten principles for good design]]></title>
-        <id>https://chiperman.github.io/ten-principles-for-good-design/</id>
-        <link href="https://chiperman.github.io/ten-principles-for-good-design/">
+        <id>http://localhost:4000/ten-principles-for-good-design/</id>
+        <link href="http://localhost:4000/ten-principles-for-good-design/">
         </link>
         <updated>2020-01-31T06:18:57.000Z</updated>
         <summary type="html"><![CDATA[<p><strong>「LESS, BUT BETTER」</strong><br>
@@ -1914,8 +1914,8 @@ Back to purity.<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[2019]]></title>
-        <id>https://chiperman.github.io/2019/</id>
-        <link href="https://chiperman.github.io/2019/">
+        <id>http://localhost:4000/2019/</id>
+        <link href="http://localhost:4000/2019/">
         </link>
         <updated>2019-12-31T15:59:59.000Z</updated>
         <summary type="html"><![CDATA[<p>🎉Review my 2019.</p>
@@ -2287,14 +2287,14 @@ Back to purity.<br>
 <hr>
 <h2 id="flag">Flag🚩</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9619115"><label class="task-list-item-label" for="task-item-9619115"> 学习 iOS 开发</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-335761"><label class="task-list-item-label" for="task-item-335761"> 完成 GitHub Learning Lab 课程</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4260857"><label class="task-list-item-label" for="task-item-4260857"> 完成 Elements of AI 课程</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7671516"><label class="task-list-item-label" for="task-item-7671516"> 早睡 - 早起（至少也得 250 天以上吧。）</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5250858"><label class="task-list-item-label" for="task-item-5250858"> 明年能写一个自己的博客主题吧。（这个不太确定说实话。）</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9517852"><label class="task-list-item-label" for="task-item-9517852"> 能够在努力一点的控制自己的欲望</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4573156"><label class="task-list-item-label" for="task-item-4573156"> 更好的控制情绪，不那么更容易的动感情</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2614444"><label class="task-list-item-label" for="task-item-2614444"> stay cool, stay alone.</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3100892"><label class="task-list-item-label" for="task-item-3100892"> 学习 iOS 开发</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3092462"><label class="task-list-item-label" for="task-item-3092462"> 完成 GitHub Learning Lab 课程</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-959279"><label class="task-list-item-label" for="task-item-959279"> 完成 Elements of AI 课程</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6254843"><label class="task-list-item-label" for="task-item-6254843"> 早睡 - 早起（至少也得 250 天以上吧。）</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4365048"><label class="task-list-item-label" for="task-item-4365048"> 明年能写一个自己的博客主题吧。（这个不太确定说实话。）</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4088828"><label class="task-list-item-label" for="task-item-4088828"> 能够在努力一点的控制自己的欲望</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5355532"><label class="task-list-item-label" for="task-item-5355532"> 更好的控制情绪，不那么更容易的动感情</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7780214"><label class="task-list-item-label" for="task-item-7780214"> stay cool, stay alone.</label></li>
 </ul>
 <hr>
 <h2 id="结尾">结尾</h2>
@@ -2303,8 +2303,8 @@ Back to purity.<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[Cheese 🧀]]></title>
-        <id>https://chiperman.github.io/cheese/</id>
-        <link href="https://chiperman.github.io/cheese/">
+        <id>http://localhost:4000/cheese/</id>
+        <link href="http://localhost:4000/cheese/">
         </link>
         <updated>2019-11-30T16:38:30.000Z</updated>
         <summary type="html"><![CDATA[<p>some cheese🧀 idea💡.</p>
