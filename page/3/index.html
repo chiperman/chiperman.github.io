@@ -1,332 +1,689 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
+
+<head>
+  <meta charset="utf-8" />
+<meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>chiperman</title>
-<link rel="shortcut icon" href="https://chiperman.github.io/favicon.ico?v=1621312559898">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="shortcut icon" href="https://chiperman.github.io/favicon.ico">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+  integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link rel="stylesheet" href="https://chiperman.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="chiperman - Atom Feed" href="https://chiperman.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="apple-touch-icon" href="https://chiperman.github.io/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaoX 博客">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+
+<!-- iconfont -->
+<link href="https://at.alicdn.com/t/font_2463772_e2doyz0d1wv.css" rel="stylesheet" />
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<!-- DEMO JS -->
+<script src="media/scripts/index.js"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139717115-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'UA-139717115-1');
+</script>
+
+  <style>
+    #vcomments {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="main-content">
+      <div class="nav-bar">
+  <!-- 首页菜单 -->
+  <div class="menu-container">
+    <a href="https://chiperman.github.io/index.html" target="_parent" class="home">
+      <svg class="home-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
+        <path fill="#fff" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+        <path fill="#fff"
+          d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+        </path>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+        </path>
+      </svg>
+      <span class="home-title">Home</span>
+    </a>
+
+    <div class="nav-menu">
+      
+      
+      <a href="/archives" class="menu">
+        Archives
+      </a>
+      
+      
+      
+      <a href="/tags" class="menu">
+        Tags
+      </a>
+      
+      
+      
+      <a href="/about" class="menu">
+        About
+      </a>
+      
+      
 
 
 
-    <meta name="description" content="Stay cool, stay alone😶." />
-  </head>
-  <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://chiperman.github.io">
-  <img class="avatar" src="https://chiperman.github.io/images/avatar.png?v=1621312559898" alt="">
-  </a>
+      <a href="https://chiperman.github.io/atom.xml" target="_blank" class="rss">
+        <span class="rss-title">RSS</span>
+        <i class="iconfont icon-rss"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+      <div class="site-header">
+  <!-- 首页头像 -->
+  <div class="site-avatar">
+    <a href="https://chiperman.github.io">
+      <img class="avatar" src="https://chiperman.github.io/images/avatar.png?v=1621318404621" alt="">
+    </a>
+  </div>
+  <!-- 首页标题 -->
   <h1 class="site-title">
     chiperman
   </h1>
+  <!-- 首页描述 -->
   <p class="site-description">
     Stay cool, stay alone😶.
   </p>
-  <div class="menu-container">
-    
-      
-        <a href="/archives" class="menu">
-          Archives
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          Tags
-        </a>
-      
-    
-      
-        <a href="/about" class="menu">
-          About
-        </a>
-      
-    
-  </div>
+  <!-- 社交软件 -->
   <div class="social-container">
     
-      
     
-      
+    <a href="https://github.com/chiperman" target="_blank">
+      <i class="iconfont icon-github"></i>
+    </a>
     
-      
     
-      
     
-      
+    <a href="https://twitter.com/chipermanju" target="_blank">
+      <i class="iconfont icon-twitter"></i>
+    </a>
+    
+    
+    
+    <a href="https://www.instagram.com/chipermanju/" target="_blank">
+      <i class="iconfont icon-instagram"></i>
+    </a>
+    
+    
+    
+    <a href="https://t.me/chiperman" target="_blank">
+      <i class="iconfont icon-telegram"></i>
+    </a>
+    
     
   </div>
 </div>
 
+      <div class="post-container">
+
+  
+  <div class="article">
     
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://chiperman.github.io/add-a-dark-mode-night-mode-to-your-website-with-a-few-steps/">
-        <h2 class="post-title">🌓Add a Dark Mode / Night Mode to your website with a few steps.</h2>
+    <div class="post-tag">
+      <svg class="tag-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M7 7h.01M7 3h5a1.99 1.99 0 011.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z">
+        </path>
+      </svg>
+      <a href="https://chiperman.github.io/tag/ZR7oR_ORc5/" class="tag">
+        Web
       </a>
-      <div class="post-info">
-        <span>
-          2019-07-22
-        </span>
-        <span>
-          2 min read
-        </span>
-        
-          <a href="https://chiperman.github.io/tag/ZR7oR_ORc5/" class="post-tag">
-            # Web
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <p>🌕 只需要几步就能为你的网页加上一个 🌓 暗黑模式/夜间模式 🌑</p>
+    </div>
+    
 
-      </div>
-    </article>
-  
     <article class="post">
-      <a href="https://chiperman.github.io/pin-fan-liao-li/">
-        <h2 class="post-title">🍚 平凡料理</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-06-16
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="https://chiperman.github.io/tag/uO-oILMVKS/" class="post-tag">
-            # Life
+      <div class="post-left">
+        <div class="post-head">
+          
+          <a class="title" href="https://chiperman.github.io/add-a-dark-mode-night-mode-to-your-website-with-a-few-steps/">
+            <h2 class="post-title">🌓Add a Dark Mode / Night Mode to your website with a few steps.</h2>
           </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <p>🍕 🍔 🍟 🌭 🥤 🍿 🥚 🍳 🍞 🧀 🥪 🌮 🍖 🍗 🥩 🍱 🍙 🍚 🍣 🍤 🍋 🍒</p>
+        </div>
+        <div class="post-abstract">
+          <p>🌕 只需要几步就能为你的网页加上一个 🌓 暗黑模式/夜间模式 🌑</p>
 
+        </div>
+        <div class="post-info">
+          <svg class="post-date" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+          <time class="post-time">
+            2019-07-22
+          </time>
+          <svg fill="none" class="view-icon" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+            </path>
+          </svg>
+          <span id="/add-a-dark-mode-night-mode-to-your-website-with-a-few-steps/" class="leancloud_visitors" data-flag-title="🌓Add a Dark Mode / Night Mode to your website with a few steps.">
+            <span class="leancloud-visitors-count"></span><span> 次阅读</span>
+          </span>
+          <span>
+            2 min read
+          </span>
+        </div>
       </div>
+      
     </article>
+  </div>
   
-    <article class="post">
-      <a href="https://chiperman.github.io/placeholder/">
-        <h2 class="post-title">如何修改输入框 input 中的 placeholder 的文字颜色</h2>
+  <div class="article">
+    
+    <div class="post-tag">
+      <svg class="tag-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M7 7h.01M7 3h5a1.99 1.99 0 011.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z">
+        </path>
+      </svg>
+      <a href="https://chiperman.github.io/tag/uO-oILMVKS/" class="tag">
+        Life
       </a>
-      <div class="post-info">
-        <span>
-          2019-06-01
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="https://chiperman.github.io/tag/OSVQg9jxtJ/" class="post-tag">
-            # HTML
-          </a>
-        
-          <a href="https://chiperman.github.io/tag/ZR7oR_ORc5/" class="post-tag">
-            # Web
-          </a>
-        
-          <a href="https://chiperman.github.io/tag/7y5e0iwW03/" class="post-tag">
-            # Code
-          </a>
-        
-      </div>
-      
-        <a href="https://chiperman.github.io/placeholder/" class="post-feature-image" style="background-image: url('https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/Cover-imgs/code.png')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://chiperman.github.io/send-your-name-to-mars/">
-        <h2 class="post-title">Send your name to Mars</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-05-24
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-      </div>
-      
-        <a href="https://chiperman.github.io/send-your-name-to-mars/" class="post-feature-image" style="background-image: url('https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/Cover-imgs/Martian.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        <p>Link：<a href="https://mars.nasa.gov/participate/send-your-name/mars2020/">See you on Mars</a></p>
+    </div>
+    
 
-      </div>
-    </article>
-  
     <article class="post">
-      <a href="https://chiperman.github.io/despair/">
-        <h2 class="post-title">Despair</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-05-24
-        </span>
-        <span>
-          1 min read
-        </span>
-        
+      <div class="post-left">
+        <div class="post-head">
+          
+          <a class="title" href="https://chiperman.github.io/pin-fan-liao-li/">
+            <h2 class="post-title">🍚 平凡料理</h2>
+          </a>
+        </div>
+        <div class="post-abstract">
+          <p>🍕 🍔 🍟 🌭 🥤 🍿 🥚 🍳 🍞 🧀 🥪 🌮 🍖 🍗 🥩 🍱 🍙 🍚 🍣 🍤 🍋 🍒</p>
+
+        </div>
+        <div class="post-info">
+          <svg class="post-date" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+          <time class="post-time">
+            2019-06-16
+          </time>
+          <svg fill="none" class="view-icon" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+            </path>
+          </svg>
+          <span id="/pin-fan-liao-li/" class="leancloud_visitors" data-flag-title="🍚 平凡料理">
+            <span class="leancloud-visitors-count"></span><span> 次阅读</span>
+          </span>
+          <span>
+            1 min read
+          </span>
+        </div>
       </div>
       
-        <a href="https://chiperman.github.io/despair/" class="post-feature-image" style="background-image: url('https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/Cover-imgs/despair.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </div>
     </article>
+  </div>
   
-    <article class="post">
-      <a href="https://chiperman.github.io/martian/">
-        <h2 class="post-title">Martian</h2>
+  <div class="article">
+    
+    <div class="post-tag">
+      <svg class="tag-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M7 7h.01M7 3h5a1.99 1.99 0 011.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z">
+        </path>
+      </svg>
+      <a href="https://chiperman.github.io/tag/OSVQg9jxtJ/" class="tag">
+        HTML
       </a>
-      <div class="post-info">
-        <span>
-          2019-05-24
-        </span>
-        <span>
-          1 min read
-        </span>
-        
+    </div>
+    
+    <div class="post-tag">
+      <svg class="tag-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M7 7h.01M7 3h5a1.99 1.99 0 011.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z">
+        </path>
+      </svg>
+      <a href="https://chiperman.github.io/tag/ZR7oR_ORc5/" class="tag">
+        Web
+      </a>
+    </div>
+    
+    <div class="post-tag">
+      <svg class="tag-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M7 7h.01M7 3h5a1.99 1.99 0 011.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z">
+        </path>
+      </svg>
+      <a href="https://chiperman.github.io/tag/7y5e0iwW03/" class="tag">
+        Code
+      </a>
+    </div>
+    
+
+    <article class="post">
+      <div class="post-left">
+        <div class="post-head">
+          
+          <a class="title" href="https://chiperman.github.io/placeholder/">
+            <h2 class="post-title">如何修改输入框 input 中的 placeholder 的文字颜色</h2>
+          </a>
+        </div>
+        <div class="post-abstract">
+          
+        </div>
+        <div class="post-info">
+          <svg class="post-date" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+          <time class="post-time">
+            2019-06-01
+          </time>
+          <svg fill="none" class="view-icon" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+            </path>
+          </svg>
+          <span id="/placeholder/" class="leancloud_visitors" data-flag-title="如何修改输入框 input 中的 placeholder 的文字颜色">
+            <span class="leancloud-visitors-count"></span><span> 次阅读</span>
+          </span>
+          <span>
+            1 min read
+          </span>
+        </div>
       </div>
       
-        <a href="https://chiperman.github.io/martian/" class="post-feature-image" style="background-image: url('https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/Cover-imgs/something-martian.jpg')">
-        </a>
+      <a href="https://chiperman.github.io/placeholder/" class="post-feature-image" style="background-image: url('https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/Cover-imgs/code.png')">
+      </a>
       
-      <div class="post-abstract">
-        
-      </div>
     </article>
+  </div>
   
+  <div class="article">
+    
+
     <article class="post">
-      <a href="https://chiperman.github.io/gxl/">
-        <h2 class="post-title">GXL</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-05-24
-        </span>
-        <span>
-          1 min read
-        </span>
-        
+      <div class="post-left">
+        <div class="post-head">
+          
+          <a class="title" href="https://chiperman.github.io/send-your-name-to-mars/">
+            <h2 class="post-title">Send your name to Mars</h2>
+          </a>
+        </div>
+        <div class="post-abstract">
+          <p>Link：<a href="https://mars.nasa.gov/participate/send-your-name/mars2020/">See you on Mars</a></p>
+
+        </div>
+        <div class="post-info">
+          <svg class="post-date" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+          <time class="post-time">
+            2019-05-24
+          </time>
+          <svg fill="none" class="view-icon" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+            </path>
+          </svg>
+          <span id="/send-your-name-to-mars/" class="leancloud_visitors" data-flag-title="Send your name to Mars">
+            <span class="leancloud-visitors-count"></span><span> 次阅读</span>
+          </span>
+          <span>
+            1 min read
+          </span>
+        </div>
       </div>
       
-      <div class="post-abstract">
-        <p>微博Link：<a href="https://weibo.com/u/2142563492?is_hot=1">棉毛衫塞进棉毛裤里 </a></p>
+      <a href="https://chiperman.github.io/send-your-name-to-mars/" class="post-feature-image" style="background-image: url('https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/Cover-imgs/Martian.jpg')">
+      </a>
+      
+    </article>
+  </div>
+  
+  <div class="article">
+    
+
+    <article class="post">
+      <div class="post-left">
+        <div class="post-head">
+          
+          <a class="title" href="https://chiperman.github.io/despair/">
+            <h2 class="post-title">Despair</h2>
+          </a>
+        </div>
+        <div class="post-abstract">
+          
+        </div>
+        <div class="post-info">
+          <svg class="post-date" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+          <time class="post-time">
+            2019-05-24
+          </time>
+          <svg fill="none" class="view-icon" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+            </path>
+          </svg>
+          <span id="/despair/" class="leancloud_visitors" data-flag-title="Despair">
+            <span class="leancloud-visitors-count"></span><span> 次阅读</span>
+          </span>
+          <span>
+            1 min read
+          </span>
+        </div>
+      </div>
+      
+      <a href="https://chiperman.github.io/despair/" class="post-feature-image" style="background-image: url('https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/Cover-imgs/despair.jpg')">
+      </a>
+      
+    </article>
+  </div>
+  
+  <div class="article">
+    
+
+    <article class="post">
+      <div class="post-left">
+        <div class="post-head">
+          
+          <a class="title" href="https://chiperman.github.io/martian/">
+            <h2 class="post-title">Martian</h2>
+          </a>
+        </div>
+        <div class="post-abstract">
+          
+        </div>
+        <div class="post-info">
+          <svg class="post-date" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+          <time class="post-time">
+            2019-05-24
+          </time>
+          <svg fill="none" class="view-icon" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+            </path>
+          </svg>
+          <span id="/martian/" class="leancloud_visitors" data-flag-title="Martian">
+            <span class="leancloud-visitors-count"></span><span> 次阅读</span>
+          </span>
+          <span>
+            1 min read
+          </span>
+        </div>
+      </div>
+      
+      <a href="https://chiperman.github.io/martian/" class="post-feature-image" style="background-image: url('https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/Cover-imgs/something-martian.jpg')">
+      </a>
+      
+    </article>
+  </div>
+  
+  <div class="article">
+    
+
+    <article class="post">
+      <div class="post-left">
+        <div class="post-head">
+          
+          <a class="title" href="https://chiperman.github.io/gxl/">
+            <h2 class="post-title">GXL</h2>
+          </a>
+        </div>
+        <div class="post-abstract">
+          <p>微博Link：<a href="https://weibo.com/u/2142563492?is_hot=1">棉毛衫塞进棉毛裤里 </a></p>
 <p>博客Link：<a href="https://mianmaoshan.github.io/">棉毛衫塞进棉毛裤里</a></p>
 
+        </div>
+        <div class="post-info">
+          <svg class="post-date" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+          <time class="post-time">
+            2019-05-24
+          </time>
+          <svg fill="none" class="view-icon" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+            </path>
+          </svg>
+          <span id="/gxl/" class="leancloud_visitors" data-flag-title="GXL">
+            <span class="leancloud-visitors-count"></span><span> 次阅读</span>
+          </span>
+          <span>
+            1 min read
+          </span>
+        </div>
       </div>
+      
     </article>
+  </div>
   
+  <div class="article">
+    
+
     <article class="post">
-      <a href="https://chiperman.github.io/zzx/">
-        <h2 class="post-title">Mind</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-05-24
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-      </div>
-      
-        <a href="https://chiperman.github.io/zzx/" class="post-feature-image" style="background-image: url('https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/Cover-imgs/zzx.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        <p>I really don't like real people.</p>
+      <div class="post-left">
+        <div class="post-head">
+          
+          <a class="title" href="https://chiperman.github.io/zzx/">
+            <h2 class="post-title">Mind</h2>
+          </a>
+        </div>
+        <div class="post-abstract">
+          <p>I really don't like real people.</p>
 <p>……to be continue</p>
 
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://chiperman.github.io/live-to-death/">
-        <h2 class="post-title">Live to Death</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-05-23
-        </span>
-        <span>
-          2 min read
-        </span>
-        
+        </div>
+        <div class="post-info">
+          <svg class="post-date" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+          <time class="post-time">
+            2019-05-24
+          </time>
+          <svg fill="none" class="view-icon" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+            </path>
+          </svg>
+          <span id="/zzx/" class="leancloud_visitors" data-flag-title="Mind">
+            <span class="leancloud-visitors-count"></span><span> 次阅读</span>
+          </span>
+          <span>
+            1 min read
+          </span>
+        </div>
       </div>
       
-      <div class="post-abstract">
-        <p><strong>Sorrow and Lucky</strong></p>
+      <a href="https://chiperman.github.io/zzx/" class="post-feature-image" style="background-image: url('https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/Cover-imgs/zzx.jpg')">
+      </a>
+      
+    </article>
+  </div>
+  
+  <div class="article">
+    
+
+    <article class="post">
+      <div class="post-left">
+        <div class="post-head">
+          
+          <a class="title" href="https://chiperman.github.io/live-to-death/">
+            <h2 class="post-title">Live to Death</h2>
+          </a>
+        </div>
+        <div class="post-abstract">
+          <p><strong>Sorrow and Lucky</strong></p>
 <blockquote>
 <p>The world is a wonderful place.</p>
 </blockquote>
 <p>世界是美好的。</p>
 
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://chiperman.github.io/nomo/">
-        <h2 class="post-title">NOMO</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-05-23
-        </span>
-        <span>
-          1 min read
-        </span>
-        
+        </div>
+        <div class="post-info">
+          <svg class="post-date" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+          <time class="post-time">
+            2019-05-23
+          </time>
+          <svg fill="none" class="view-icon" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+            </path>
+          </svg>
+          <span id="/live-to-death/" class="leancloud_visitors" data-flag-title="Live to Death">
+            <span class="leancloud-visitors-count"></span><span> 次阅读</span>
+          </span>
+          <span>
+            2 min read
+          </span>
+        </div>
       </div>
       
-      <div class="post-abstract">
-        <blockquote>
+    </article>
+  </div>
+  
+  <div class="article">
+    
+
+    <article class="post">
+      <div class="post-left">
+        <div class="post-head">
+          
+          <a class="title" href="https://chiperman.github.io/nomo/">
+            <h2 class="post-title">NOMO</h2>
+          </a>
+        </div>
+        <div class="post-abstract">
+          <blockquote>
 <p>「照片还是胶片的好。胶片在冲洗时会湿一次。这很重要。」</p>
 </blockquote>
 <p>——Nobuyoshi Araki</p>
 
+        </div>
+        <div class="post-info">
+          <svg class="post-date" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+          <time class="post-time">
+            2019-05-23
+          </time>
+          <svg fill="none" class="view-icon" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+            </path>
+          </svg>
+          <span id="/nomo/" class="leancloud_visitors" data-flag-title="NOMO">
+            <span class="leancloud-visitors-count"></span><span> 次阅读</span>
+          </span>
+          <span>
+            1 min read
+          </span>
+        </div>
       </div>
+      
     </article>
+  </div>
   
 </div>
 
-    
-        <div class="pagination-container">
+      <div class="pagination-container">
   
-    <a href="https://chiperman.github.io/page/2/" class="prev-page">上一页</a>
+  <a href="https://chiperman.github.io/page/2/" class="prev-page">上一页</a>
   
   
-    <a href="https://chiperman.github.io/page/4/" class="next-page">下一页</a>
+  <a href="https://chiperman.github.io/page/4/" class="next-page">下一页</a>
   
 </div>
 
-    
-        <div class="site-footer">
+      <div class="site-footer">
   
-  <a class="rss" href="https://chiperman.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
+  <b>Theme: </b>
+  <a href="https://github.com/chiperman/gridea-theme-porky" target="_blank" title="Porky">
+    <span><b>Porky</b></span>
+  </a>
+  <b>. Powered by </b>
+  <a href="https://gridea.dev/" target="_blank" title="Gridea">
+    <span><b>Gridea</b></span>
   </a>
 </div>
 
-      </div>
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+      <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+
+<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'BLubAKVaXmbRyAT7TV6B6wYU-MdYXbMMI',
+		appKey: 'lWwtGpLDC40rEiOPVErmwy5N',
+		avatar: '',
+		visitor: true,
+		
+                placeholder: 'Please leave your comments...'
+        
+	});
+</script>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
