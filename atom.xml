@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chiperman.github.io</id>
     <title>chiperman</title>
-    <updated>2021-05-18T04:36:03.188Z</updated>
+    <updated>2021-05-18T04:37:16.049Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chiperman.github.io"/>
     <link rel="self" href="https://chiperman.github.io/atom.xml"/>
@@ -2287,14 +2287,14 @@ Back to purity.<br>
 <hr>
 <h2 id="flag">Flag🚩</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-903349"><label class="task-list-item-label" for="task-item-903349"> 学习 iOS 开发</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8753671"><label class="task-list-item-label" for="task-item-8753671"> 完成 GitHub Learning Lab 课程</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4531174"><label class="task-list-item-label" for="task-item-4531174"> 完成 Elements of AI 课程</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6072462"><label class="task-list-item-label" for="task-item-6072462"> 早睡 - 早起（至少也得 250 天以上吧。）</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6332232"><label class="task-list-item-label" for="task-item-6332232"> 明年能写一个自己的博客主题吧。（这个不太确定说实话。）</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1483203"><label class="task-list-item-label" for="task-item-1483203"> 能够在努力一点的控制自己的欲望</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4723099"><label class="task-list-item-label" for="task-item-4723099"> 更好的控制情绪，不那么更容易的动感情</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1061934"><label class="task-list-item-label" for="task-item-1061934"> stay cool, stay alone.</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2631292"><label class="task-list-item-label" for="task-item-2631292"> 学习 iOS 开发</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6581044"><label class="task-list-item-label" for="task-item-6581044"> 完成 GitHub Learning Lab 课程</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8216361"><label class="task-list-item-label" for="task-item-8216361"> 完成 Elements of AI 课程</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4362227"><label class="task-list-item-label" for="task-item-4362227"> 早睡 - 早起（至少也得 250 天以上吧。）</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8716093"><label class="task-list-item-label" for="task-item-8716093"> 明年能写一个自己的博客主题吧。（这个不太确定说实话。）</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-156296"><label class="task-list-item-label" for="task-item-156296"> 能够在努力一点的控制自己的欲望</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8059400"><label class="task-list-item-label" for="task-item-8059400"> 更好的控制情绪，不那么更容易的动感情</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8459094"><label class="task-list-item-label" for="task-item-8459094"> stay cool, stay alone.</label></li>
 </ul>
 <hr>
 <h2 id="结尾">结尾</h2>
