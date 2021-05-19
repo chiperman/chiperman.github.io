@@ -501,7 +501,7 @@ td {
 @media (max-width: 600px) {
   .nav-bar .menu-container a.menu,
   .nav-bar .menu-container a.rss {
-    margin-right: 10px;
+    margin-right: 20px;
     padding: 8px 8px;
   }
   .nav-bar .menu-container .home-title,
