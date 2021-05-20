@@ -444,6 +444,7 @@ td {
 }
 .nav-bar .menu-container span {
   vertical-align: middle;
+  margin-left: 5px;
 }
 .nav-bar .menu-container .home:hover {
   background-color: #F3F4F6;
@@ -501,7 +502,6 @@ td {
 @media (max-width: 600px) {
   .nav-bar .menu-container a.menu,
   .nav-bar .menu-container a.rss {
-    margin-right: 20px;
     padding: 8px 8px;
   }
   .nav-bar .menu-container .home-title,
