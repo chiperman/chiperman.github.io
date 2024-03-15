@@ -1,0 +1,1164 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+<meta name="description" content="Stay cool, stay alone😶." />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+<title>《Linux  就该这么学》学习笔记 | Chiperman&#39;s  Blog</title>
+<link rel="shortcut icon" href="https://chiperman.github.io/favicon.ico">
+
+<link rel="stylesheet" href="https://chiperman.github.io/styles/main.css">
+<link rel="apple-touch-icon" href="https://chiperman.github.io/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="XiaoX 博客">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<!-- iconfont -->
+<link href="//at.alicdn.com/t/font_2463772_glcffdg0qau.css" rel="stylesheet" />
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139717115-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'UA-139717115-1');
+</script>
+
+</head>
+
+<body>
+  <div class="main">
+    <div class="main-content">
+      <div class="nav-bar">
+  <!-- 首页菜单 -->
+  <div class="menu-container">
+    <a href="https://chiperman.github.io/index.html" target="_parent" class="home">
+      <svg class="home-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
+        <path fill="#fff" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+        <path fill="#fff"
+          d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+        </path>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+        </path>
+      </svg>
+      <span class="home-title">Home</span>
+    </a>
+
+    <div class="nav-menu">
+      
+      
+      <a href="/archives" class="menu">
+        Archives
+      </a>
+      
+      
+      
+      <a href="/tags" class="menu">
+        Tags
+      </a>
+      
+      
+      
+      <a href="/about" class="menu">
+        About
+      </a>
+      
+      
+
+
+
+      <a href="https://chiperman.github.io/atom.xml" target="_blank" class="rss">
+        <span class="rss-title">RSS</span>
+        <i class="iconfont icon-rss"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+      <div class="post-detail">
+        <article class="post">
+          
+          <h2 class="post-title">
+            《Linux  就该这么学》学习笔记
+          </h2>
+
+          <div class="post-info">
+            <svg class="post-date" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+            <time class="post-time">
+              2020-02-19
+            </time>
+            <svg fill="none" class="view-icon" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+              </path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+              </path>
+            </svg>
+            <span id="/linux-study-note/" class="leancloud_visitors" data-flag-title="《Linux  就该这么学》学习笔记">
+              <span class="leancloud-visitors-count"></span><span> 次阅读</span>
+            </span>
+            <span>
+              21 min read
+            </span>
+          </div>
+
+          
+          <div class="post-feature-image" style="background-image: url('https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/Cover-imgs/linux.jpg')">
+          </div>
+          
+          <div class="post-content">
+            <p>这个系列主要记录了 Linux 的学习过程中我觉得有必要记录的知识点</p>
+<!-- more -->
+<h2 id="day-01">Day 01</h2>
+<hr>
+<h3 id="15-rpm红帽软件包管理器">1.5 RPM（红帽软件包管理器）</h3>
+<ol>
+<li>本质：将安装规则与源代码打包</li>
+<li>目的：降低安装难度</li>
+<li>原理：通过将安装规则打包到一起降低难度</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rpm -ivh filename.rpm</td>
+<td>安装软件的命令格式</td>
+</tr>
+<tr>
+<td>rpm -Uvh filename.rpm</td>
+<td>升级软件的命令格式</td>
+</tr>
+<tr>
+<td>rpm -e filename.rpm</td>
+<td>卸载软件的命令格式</td>
+</tr>
+<tr>
+<td>rpm -qpi filename.rpm</td>
+<td>查询软件描述信息的命令格式</td>
+</tr>
+<tr>
+<td>rpm -qpl filename.rpm</td>
+<td>列出软件文件信息的命令格式</td>
+</tr>
+<tr>
+<td>rpm -qf filename</td>
+<td>查询文件属于哪个 RPM 的命令格式</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="16-yum-软件仓库">1.6 Yum 软件仓库</h3>
+<p>Yum 软件仓库可以 根据用户的要求分析出所需软件包及其相关的依赖关系，然后自动从服务器下载软件包并安装到系统。</p>
+<ol>
+<li>目的：进一步降低软件安装难度</li>
+<li>原理：将大量的常用的 RPM 软件包收集到一起</li>
+<li>通过：自动解决依赖关系</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>yum repolist all</td>
+<td>列出所有仓库</td>
+</tr>
+<tr>
+<td>yum list all</td>
+<td>列出仓库中所有软件包</td>
+</tr>
+<tr>
+<td>yum info</td>
+<td>软件包名称 查看软件包信息</td>
+</tr>
+<tr>
+<td>yum install</td>
+<td>软件包名称 安装软件包</td>
+</tr>
+<tr>
+<td>yum reinstall</td>
+<td>软件包名称 重新安装软件包</td>
+</tr>
+<tr>
+<td>yum update</td>
+<td>软件包名称 升级软件包</td>
+</tr>
+<tr>
+<td>yum remove</td>
+<td>软件包 移除软件包</td>
+</tr>
+<tr>
+<td>yum clean all</td>
+<td>清除所有仓库缓存</td>
+</tr>
+<tr>
+<td>yum check-update</td>
+<td>检查可更新的软件包</td>
+</tr>
+<tr>
+<td>yum grouplist</td>
+<td>查看系统中已经安装的软件包组</td>
+</tr>
+<tr>
+<td>yum groupinstall</td>
+<td>软件包组 安装指定的软件包组</td>
+</tr>
+<tr>
+<td>yum groupremove</td>
+<td>软件包组 移除指定的软件包组</td>
+</tr>
+<tr>
+<td>yum groupinfo</td>
+<td>软件包组 查询指定的软件包组信息</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="17-systemd-初始化进程">1.7 systemd 初始化进程</h3>
+<table>
+<thead>
+<tr>
+<th>systemctl 命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>systemctl restart 服务名称</td>
+<td>重启服务 （PID 值不变）</td>
+</tr>
+<tr>
+<td>systemctl reload服务名称</td>
+<td>重新加载配置文件（不终止服务，不修改 PID 值）</td>
+</tr>
+<tr>
+<td>systemctl start 服务名称</td>
+<td>启动服务</td>
+</tr>
+<tr>
+<td>systemctl stop 服务名称</td>
+<td>停止服务</td>
+</tr>
+<tr>
+<td>systemctl enable 服务名称</td>
+<td>加入到启动项</td>
+</tr>
+<tr>
+<td>systemctl status 服务名称</td>
+<td>查看服务状态</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="22-linux-命令格式">2.2 Linux 命令格式</h3>
+<p><code>命令名称 [命令参数] [命令对象]</code></p>
+<p>其中命令名称、命令参数、命令对象之间要有空格来分隔。</p>
+<p>Linux 的命令参数有两种格式：</p>
+<table>
+<thead>
+<tr>
+<th>长格式</th>
+<th>短格式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>--命令前缀</td>
+<td>-命令前缀</td>
+</tr>
+<tr>
+<td>--list</td>
+<td>-l</td>
+</tr>
+<tr>
+<td>--all</td>
+<td>-a</td>
+</tr>
+</tbody>
+</table>
+<p><code>短格式和短格式的参数可以合并（只保留一个减号）</code><br>
+<code>短格式和长格式的参数不能合并</code><br>
+<code>长格式和长格式的参数不能合并</code><br>
+<code>长格式和短格式的参数不能合并</code></p>
+<p>举个例子如果要合并 <code>-a</code> 和 <code>-l</code> 这两个短格式，那么可以写成 <code>-al</code>。</p>
+<hr>
+<h3 id="23-常用系统工作命令">2.3 常用系统工作命令</h3>
+<h4 id="236-linux-的-5-种常见进程状态">2.3.6 Linux 的 5 种常见进程状态：</h4>
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R（运行）</td>
+<td>进程正在运行或在运行队列中等待</td>
+</tr>
+<tr>
+<td>S（中断）</td>
+<td>进程处于休眠中，当某个条件形成后或者接收到信号时，则脱离该状态</td>
+</tr>
+<tr>
+<td>D（不可中断）</td>
+<td>进程不响应系统异步信号，即便用 kill 命令也不能将其中断</td>
+</tr>
+<tr>
+<td>Z（僵死）</td>
+<td>进程已经终止，但进程描述符依然存在, 直到父进程调用 wait4()系统函数 后将进程释放</td>
+</tr>
+<tr>
+<td>T（停止）</td>
+<td>进程收到停止信号后停止运行</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="237-top-命令">2.3.7 top 命令</h4>
+<p>top 命令是用来动态监视进程活动与系统负载等信息的命令。</p>
+<p>可以看作是 Windows 系统中的任务管理器。</p>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/2020/linux-study-note/Snipaste_2020-02-19_18-10-05.png" alt="image" loading="lazy"></figure>
+<p>在上面的图片中，top的前五行为系统整体的统计信息，分别代表以下含义：</p>
+<ol>
+<li>第 1 行：系统时间、系统以及运行时间、登录终端数、系统负债（三个三个数值分别为 1 分钟、5 分钟、15 分钟内的平均值，数值越小意味着负载越低。）</li>
+<li>第 2 行：进程总数、运行中的进程数、睡眠中的进程数、停止的进程数、僵死的进程数。</li>
+<li>第 3 行：用户占用资源百分比、系统内核占用资源百分比、改变过优先级的进程资源百分比、空闲的资源百分比等。</li>
+<li>第 4 行：物理内存总量、内存使用量、内存空闲量、作为内核缓存的内存量。</li>
+<li>第 5 行：虚拟内存总量、虚拟内存使用量、虚拟内存空闲量、已被提前加载的内存量。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>信息</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>top</td>
+<td>当前系统时间</td>
+</tr>
+<tr>
+<td>up</td>
+<td>系统已经开机时间</td>
+</tr>
+<tr>
+<td>user</td>
+<td>系统当前终端数量</td>
+</tr>
+<tr>
+<td>load  average</td>
+<td>系统负载情况</td>
+</tr>
+<tr>
+<td>Tasks</td>
+<td>进程总数量</td>
+</tr>
+<tr>
+<td>running</td>
+<td>运行进程</td>
+</tr>
+<tr>
+<td>sleeping</td>
+<td>等待进程</td>
+</tr>
+<tr>
+<td>stopped</td>
+<td>停止进程</td>
+</tr>
+<tr>
+<td>zombie</td>
+<td>僵尸进程</td>
+</tr>
+<tr>
+<td>%Cpu(s)</td>
+<td>CPU 使用情况</td>
+</tr>
+<tr>
+<td>us</td>
+<td>CPU 使用率</td>
+</tr>
+<tr>
+<td>id</td>
+<td>CPU 空闲率</td>
+</tr>
+<tr>
+<td>Kib Mem</td>
+<td>内存大小</td>
+</tr>
+<tr>
+<td>total</td>
+<td>内存总大小</td>
+</tr>
+<tr>
+<td>used</td>
+<td>已使用内存</td>
+</tr>
+<tr>
+<td>free</td>
+<td>空闲内存</td>
+</tr>
+<tr>
+<td>Kib Swap</td>
+<td>交换分区</td>
+</tr>
+<tr>
+<td>PID</td>
+<td>进程号码</td>
+</tr>
+<tr>
+<td>USER</td>
+<td>用户发起人</td>
+</tr>
+<tr>
+<td>PR-NI</td>
+<td>进程优先级（数值越低优先级越高）</td>
+</tr>
+<tr>
+<td>S</td>
+<td>进程状态</td>
+</tr>
+<tr>
+<td>%CPU</td>
+<td>进程占用 CPU 百分比</td>
+</tr>
+<tr>
+<td>%MEM</td>
+<td>进程占用内存百分比</td>
+</tr>
+<tr>
+<td>TIME+</td>
+<td>进程运行时间</td>
+</tr>
+</tbody>
+</table>
+<h2 id="day-02">Day 02</h2>
+<hr>
+<h3 id="24-系统状态检测命令">2.4 系统状态检测命令</h3>
+<h4 id="241-ifconfig-命令">2.4.1 ifconfig 命令</h4>
+<p>获取网卡配置与网络状态信息，格式为 <code>ifconfig [网络设备] [参数]</code>。</p>
+<p>例如：</p>
+<pre><code class="language-shell">[root@linux ~]# ifconfig
+</code></pre>
+<figure data-type="image" tabindex="2"><img src="https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/2020/linux-study-note/ifconfig.png" alt="image" loading="lazy"></figure>
+<p>从上图的可得 ip 地址、子网掩码：</p>
+<figure data-type="image" tabindex="3"><img src="https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/2020/linux-study-note/ip.png" alt="image" loading="lazy"></figure>
+<p>网卡 MAC 地址（物理地址，唯一值）</p>
+<figure data-type="image" tabindex="4"><img src="https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/2020/linux-study-note/MAC.png" alt="image" loading="lazy"></figure>
+<p>收到数据包大小（收到 14.7 KiB）</p>
+<figure data-type="image" tabindex="5"><img src="https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/2020/linux-study-note/receive.png" alt="image" loading="lazy"></figure>
+<p>发送数据包大小（发送 16.1 KiB）</p>
+<figure data-type="image" tabindex="6"><img src="https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/2020/linux-study-note/send.png" alt="image" loading="lazy"></figure>
+<hr>
+<h4 id="242-uname-a-命令">2.4.2 uname -a 命令</h4>
+<p>用于查看系统内核与系统版本等信息，格式为 <code>uname [-a]</code>。</p>
+<p>例如：</p>
+<pre><code class="language-sh">[root@linux ~]# uname -a
+</code></pre>
+<figure data-type="image" tabindex="7"><img src="https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/2020/linux-study-note/uname.png" alt="image" loading="lazy"></figure>
+<p>其中上图中，<br>
+<code>zhuzongxiao.com</code> 是主机名称；<br>
+<code>3.10.0-862.el7.x86_64</code> 是内核版本号；<br>
+<code>#1 SMP Wed Mar 21 18：14：51 EDT 2018</code> 系统打包发布时间；<br>
+<code>x86_64</code>  系统架构。</p>
+<hr>
+<h4 id="244-free-命令">2.4.4 free 命令</h4>
+<p>查看当前系统中内存的使用量信息，格式为 <code>free [-h]</code>。</p>
+<p>例如：</p>
+<pre><code class="language-shell">[root@linux ~]# free -h 
+</code></pre>
+<p>可以得到如下的图片：<br>
+其中 <code>Mem</code> 表示物理内存、 <code>Swap</code> 表示交换分区。</p>
+<figure data-type="image" tabindex="8"><img src="https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/2020/linux-study-note/free-h.png" alt="image" loading="lazy"></figure>
+<p>代表以下信息：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>内存总量</th>
+<th>已用量</th>
+<th>可用量</th>
+<th>进程<br />共享的<br />内存量</th>
+<th>磁盘<br />缓存的<br />内存量</th>
+<th>缓存的<br />内存量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>total</td>
+<td>used</td>
+<td>free</td>
+<td>shared</td>
+<td>buff/cache</td>
+<td>available</td>
+</tr>
+<tr>
+<td>Mem</td>
+<td>3.7G</td>
+<td>848M</td>
+<td>2.0G</td>
+<td>11M</td>
+<td>860M</td>
+<td>2.6G</td>
+</tr>
+<tr>
+<td>Swap</td>
+<td>819M</td>
+<td>0B</td>
+<td>819</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="245-who-命令">2.4.5 who 命令</h4>
+<p>可以查看当前登入主机的用户终端信息，格式为 <code>who [参数]</code>。</p>
+<p>例如：</p>
+<pre><code class="language-shell">[root@linux ~]# who
+</code></pre>
+<figure data-type="image" tabindex="9"><img src="https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/2020/linux-study-note/who.png" alt="image" loading="lazy"></figure>
+<hr>
+<h4 id="247-history-命令">2.4.7 history 命令</h4>
+<p>用于显示历史执行过的命令，格式为 <code>history [-c]</code>。</p>
+<p>用这个命令可以查看当前用户执行过的最近的 <strong>1000</strong> 条命令，也可以修改 <code>/etc/profile</code> 中的 <code>HISTSIZE</code> 变量值。<br>
+用户可以使用键盘上的上下键进行选择，也可以使用 <code>!编码数字</code> 的方法来重复执行。<br>
+使用 <code>history -c</code> 即可清空记录。</p>
+<hr>
+<h4 id="248-sosreport-命令">2.4.8 sosreport 命令</h4>
+<p>用于收集系统配置及框架信息并输出诊断文档，格式为 <code>sosreport</code>。</p>
+<hr>
+<h3 id="25-工作目录切换命令">2.5 工作目录切换命令</h3>
+<h4 id="251-pwd-命令">2.5.1 pwd 命令</h4>
+<p>用于显示用户当前所处的工作目录，格式为 <code>pwd [选项]</code>。</p>
+<hr>
+<h4 id="252-cd-命令">2.5.2 cd 命令</h4>
+<p>用于切换工作路径，格式为 <code>cd [目录名称]</code>。<br>
+也可以通过 <code>cd -</code> 返回上一次所在的目录，<br>
+或是通过 <code>cd..</code> 进入上级目录，<br>
+以及通过 <code>cd~</code> 切换到当前用户的家目录，<br>
+还有通过 <code>cd ~username</code> 切换到其他用户的家目录。</p>
+<h4 id="253-ls-命令">2.5.3 ls 命令</h4>
+<p>用于现实目录中的文件信息，格式为 <code>ls [选项] [文件]</code>。<br>
+<code>ls -a</code> 可以看到所有文件包括隐藏文件，<br>
+如果要查看目录属性，可以添加一个 <code>-d</code> 参数。</p>
+<p>Linux 中所有以 <code>.</code> 开头的文件都是隐藏文件。</p>
+<hr>
+<h3 id="26-文本文件编辑命令">2.6 文本文件编辑命令</h3>
+<h4 id="261-cat-命令">2.6.1 cat 命令</h4>
+<p>用于查看纯文本文件（内容较少），格式为 <code>cat [选项] [文件]</code>。</p>
+<h4 id="262-more-命令">2.6.2 more 命令</h4>
+<p>用于查看纯文本文件（内容较多），格式为 <code>more [选项] [文件]</code>。</p>
+<h4 id="263-head-命令">2.6.3 head 命令</h4>
+<p>用于查看纯文本文档的前 N 行，格式为 <code>head [选项] [文件]</code>。</p>
+<p>如果只想看前 15 行，那么可以使用 <code>head -n 15 文件名</code> 即可。</p>
+<h4 id="264-tail-命令">2.6.4 tail 命令</h4>
+<p>与 <code>head</code> 命令相反，看纯文本文档的后 N 行或者是持续刷新内容，格式为 <code>tail [选项] [文件]</code>。</p>
+<p>如果需要持续刷新一个文件的内容，格式为  <code>tail -f 文件名</code>。</p>
+<h2 id="day-05">Day 05</h2>
+<hr>
+<h3 id="51-linux-系统三种用户身份">5.1 Linux 系统三种用户身份</h3>
+<table>
+<thead>
+<tr>
+<th>身份</th>
+<th>名称</th>
+<th>UID 值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>管理员</td>
+<td>root</td>
+<td>UID：0</td>
+</tr>
+<tr>
+<td>系统用户</td>
+<td></td>
+<td>UID：1~999</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>早期Linux RHELE5/6 UID：1~499</td>
+</tr>
+<tr>
+<td>普通用户</td>
+<td></td>
+<td>UID：1000~</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>早期Linux RHELE5/6 UID：500~65535</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="511-useradd-命令">5.1.1 useradd 命令</h4>
+<p>使用 <code>useradd</code> 命令，格式为 <code>  useradd [选项] 用户名</code>。<br>
+默认的用户家目录会在 <code>/home</code> 目录中，默认的 <code>Shell</code> 解释器为 <code>/bin/bash</code>。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-d</td>
+<td>指定用户的家目录（默认为/home/username）</td>
+</tr>
+<tr>
+<td>-e</td>
+<td>账户的到期时间，格式为 YYYY-MM-DD.</td>
+</tr>
+<tr>
+<td>-u</td>
+<td>指定该用户的默认 UID</td>
+</tr>
+<tr>
+<td>-g</td>
+<td>指定一个初始的用户基本组（必须已存在）</td>
+</tr>
+<tr>
+<td>-G</td>
+<td>指定一个或多个扩展用户组</td>
+</tr>
+<tr>
+<td>-N</td>
+<td>不创建与用户同名的基本用户组</td>
+</tr>
+<tr>
+<td>-s</td>
+<td>指定该用户的默认 Shell 解释器</td>
+</tr>
+</tbody>
+</table>
+<p>如果要创建一个普通用户并且指定家目录的路径、用户的 <code>UID</code> 以及 <code>Shell</code> 解释器，<br>
+使用 <code>useradd -d /home/linux -u 8888 -s /sbin/nologin xxx</code>。<br>
+意思是创建了一个家目录为 <code>/home/linux</code> , 用户的 <code>UID</code> 为 8888，默认解释器是 <code>/sbin/nologin</code> 的 <code>xxx</code> 用户，其中用户的解释器被设置为 <code>nologin</code>，则代表该用户不能登录到系统中。</p>
+<p>系统中的用户组分为<strong>基本组</strong>和<strong>扩展组</strong>。<br>
+基本组：用户与生俱来，创建好用户后，默认有一个与其同名的用户组。基本组只能有一个。<br>
+扩展组：加入的其它组就是扩展组，可以有 N 个扩展组。</p>
+<hr>
+<h4 id="512-groupadd-命令">5.1.2 groupadd 命令</h4>
+<p>可以创建用户组，格式为 <code>gourpadd [选项] 群组名</code>。</p>
+<p>例如：</p>
+<pre><code class="language-shell">[root@linux home]# groupadd groupA
+</code></pre>
+<hr>
+<h4 id="513-usermod-命令">5.1.3 usermod 命令</h4>
+<p>用于修改用户属性，格式为 <code>usermode [选项] 用户名</code>。</p>
+<p>因为 Linux 系统的一切都是文件，因此可以在系统中创建用户也就是修改配置文件。可以直接用文本编辑器修改用户参数项目，也可以用 <code>usermod</code> 命令进行修改已创建的信息。比如用户的 UID、基本/扩展用户组、默认终端。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-c</td>
+<td>填写用户账户的备注信息</td>
+</tr>
+<tr>
+<td>-d -m</td>
+<td>参数-m 与参数-d 连用，可重新指定用户的家目录并自动把旧的数据转移过去</td>
+</tr>
+<tr>
+<td>-e</td>
+<td>账户的到期时间，格式为 YYYY-MM-DD</td>
+</tr>
+<tr>
+<td>-g</td>
+<td>变更所属用户组</td>
+</tr>
+<tr>
+<td>-G</td>
+<td>变更扩展用户组</td>
+</tr>
+<tr>
+<td>-L</td>
+<td>锁定用户禁止其登录系统</td>
+</tr>
+<tr>
+<td>-U</td>
+<td>解锁用户，允许其登录系统</td>
+</tr>
+<tr>
+<td>-s</td>
+<td>变更默认终端</td>
+</tr>
+<tr>
+<td>-u</td>
+<td>修改用户的 UID</td>
+</tr>
+</tbody>
+</table>
+<p>例如：</p>
+<p>假设账户 <code>chiperman</code> 的信息如下：</p>
+<pre><code class="language-shell">[root@linux ~]# id chiperman
+uid=1000(chiperman) gid=1000(chiperman) groups=1000(chiperman) 
+</code></pre>
+<p>将用户 <code>chiperman</code> 加入到 <code>root</code> 用户组中，扩展列表会多出 <code>root</code> 用户组而基本组不受影响：</p>
+<pre><code class="language-shell">[root@linux ~]# usermod -G root chiperman
+[root@linux ~]# id chiperman
+uid=1000(chiperman) gid=1000(chiperman) groups=1000(chiperman),0(root) 
+</code></pre>
+<hr>
+<h4 id="514-passwd-命令">5.1.4 passwd 命令</h4>
+<p>用于修改用户密码、过期时间、认证信息等，格式为 <code>passwd [选项] [用户名]</code>。</p>
+<p>管理员可以修改自己和所有用户的密码，还不需要验证旧密码。<br>
+用户只能使用 passwd 修改自己的密码。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-l</td>
+<td>锁定用户，禁止其登录</td>
+</tr>
+<tr>
+<td>-u</td>
+<td>解除锁定，允许用户登录</td>
+</tr>
+<tr>
+<td>–stdin</td>
+<td>允许通过标准输入修改用户密码，如 `echo &quot;NewPassWord&quot;</td>
+</tr>
+<tr>
+<td>-d</td>
+<td>使该用户可用空密码登录系统</td>
+</tr>
+<tr>
+<td>-e</td>
+<td>强制用户在下次登录时修改密码</td>
+</tr>
+<tr>
+<td>-s</td>
+<td>显示用户的密码是否被锁定，以及密码所采用的加密算法名称</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="515-userdel-命令">5.1.5 userdel 命令</h4>
+<p>用于删除用户，格式为 <code>userdel [选项] 用户名</code>。</p>
+<p>执行删除操作时，用户的家目录会默认保留，使用 <code>-r</code> 参数可以将其删除</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-f</td>
+<td>强制删除用户</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>同时删除用户及用户家目录</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="52-文件权限与归属">5.2 文件权限与归属</h3>
+<p>Linux 系统的权限区分</p>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-</td>
+<td>普通文件</td>
+</tr>
+<tr>
+<td>d</td>
+<td>目录文件</td>
+</tr>
+<tr>
+<td>l</td>
+<td>链接文件</td>
+</tr>
+<tr>
+<td>b</td>
+<td>块设备文件</td>
+</tr>
+<tr>
+<td>c</td>
+<td>字符设备文件</td>
+</tr>
+<tr>
+<td>p</td>
+<td>管道文件</td>
+</tr>
+</tbody>
+</table>
+<h4 id="521-文件">5.2.1 文件</h4>
+<p>对于每一个文件，都有都有所属的<strong>所有者</strong>和<strong>所有组</strong>，并且规定了文件的<strong>所有者</strong>、 <strong>所属组</strong>以及<strong>其他用户</strong>对文件所拥有权限，分别是“可读”、“可写”、“可执行”。</p>
+<table>
+<thead>
+<tr>
+<th>权限</th>
+<th>权限具体内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>可读</td>
+<td>示能够读取文件的实际内容</td>
+</tr>
+<tr>
+<td>可写</td>
+<td>能够编辑、新增、修改、删除文件的实际内容</td>
+</tr>
+<tr>
+<td>可执行</td>
+<td>能够运行一个脚本程序</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="522-目录文件">5.2.2 目录文件</h4>
+<table>
+<thead>
+<tr>
+<th>权限</th>
+<th>权限具体内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>可读</td>
+<td>能够读取目录内的文件列表</td>
+</tr>
+<tr>
+<td>可写</td>
+<td>能够在目录内新增、删除、重命名文件</td>
+</tr>
+<tr>
+<td>可执行</td>
+<td>能够进入该目录</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="523-读-写-执行权限">5.2.3 读、写、执行权限</h4>
+<p>读、写、执行权限简写为 <strong>r、w、x</strong>。<br>
+也可以用数字 <strong>4、2、1</strong> 来表示</p>
+<table>
+<thead>
+<tr>
+<th>权限分配</th>
+<th>文件所有者</th>
+<th></th>
+<th></th>
+<th>文件所属组</th>
+<th></th>
+<th></th>
+<th>其他用户</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>权限项</td>
+<td>读</td>
+<td>写</td>
+<td>执行</td>
+<td>读</td>
+<td>写</td>
+<td>执行</td>
+<td>读</td>
+<td>写</td>
+<td>执行</td>
+</tr>
+<tr>
+<td>字符表示</td>
+<td>r</td>
+<td>w</td>
+<td>x</td>
+<td>r</td>
+<td>w</td>
+<td>x</td>
+<td>r</td>
+<td>w</td>
+<td>x</td>
+</tr>
+<tr>
+<td>数字表示</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>文件权限的数字法表示基于字符表示（rwx）的权限计算而来。<br>
+<span style="color:red">注意：数字法不可相加求累计和。 </span><br>
+假设一个文件的权限为 7 ，那么可读、可写、可执行（4+2+1）；<br>
+一个文件的权限为 6 ，那么可读、可写（4+2）。</p>
+<p>假设一个文件，其所有者拥有可读、可写、可执行的权限，其文件所属组拥有可读、可写的权限，而其他人只有可读的权限。那么权限就是 <strong>rwxrw-r–</strong> ，数字法为 <strong>764</strong>，如果没有这个权限，用 <code>- </code> 代替，不能使用 <code>空格</code> 。</p>
+<figure data-type="image" tabindex="10"><img src="https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/2020/linux-study-note/Snipaste_2020-02-20_18-58-49.png" alt="image" loading="lazy"></figure>
+<p>在上图中，包含了文件的类型、访问权限、所有者（属主）、所属组（属组）、占用磁盘大小、修改时间和文件名称的信息。<br>
+该文件的类型为普通文件，所有者权限为可读、可写 <code>rw-</code>，所属组的权限为可读 <code>r--</code>，其他用户的权限为可读 <code>r--</code>，所有者是 <code>root</code>，所属组是 <code>root</code>，文件的磁盘占用大小是 <code>1977</code> 字节，最近一次修改时间是 <code>2 月 15 日 02：24 分</code>，文件名称是 <code>initial-setup-ks.cfg</code>。</p>
+<hr>
+<h3 id="53-文件的特殊权限">5.3 文件的特殊权限</h3>
+<h4 id="531-suid">5.3.1 SUID</h4>
+<p><strong>SUID</strong> 是一种可对二进制程序进行设置的特殊权限，让执行者<strong>临时拥有所有者的权限</strong>（仅针对拥有执行权限的二进制程序有效）</p>
+<p>查看 <code>passwd </code>命令属性时，发现所有者的权限由 <code>rwx</code> 变为 <code>rws</code>，其中的 <code>x</code> 变为 s，就意味着这个文件被赋予了 <code>SUID</code> 权限。</p>
+<p>如果本身权限为 <code>rw-</code>，那么被赋予特殊权限后，变为大写的 <code>S</code>。</p>
+<hr>
+<h4 id="532-sgid">5.3.2 SGID</h4>
+<p><strong>SGID</strong> 有以下两种功能：</p>
+<ol>
+<li>文件（二进制的可执行文件）：临时获得所属组的权限</li>
+<li>目录：将一个目录设置了 <code>SGID</code> 权限，新建的所有文件都会默认归属于这个所属组</li>
+</ol>
+<p><code>SGID</code> 的第一种功能是参考 <code>SUID</code> 而设计的，不同点在于执行程序的用户获取的不再是文件所有者的临时权限，而是获取到文件所属组的权限。</p>
+<p>如果有 <code>SGID</code> 权限，那么所属组的可执行权限会被修改为 <code>s</code>。</p>
+<h4 id="chomd-和-chown-命令">chomd 和 chown 命令</h4>
+<p><strong>chomd</strong> 是用来设置文件和目录的权限，格式为 <code>chomd [参数] 权限 文件或目录名</code><br>
+<code>chomd 760 test</code>  意思是把 <code>test</code> 文件的权限修改为 <code>760</code>，意味着所有者、所属组、其他用户的权限分别是：“可读可写可执行”、“可读可写”、“无权限”。</p>
+<p><strong>chown</strong> 是用来设置文件或目录的所有者和所属组，格式为 <code>chwon [参数] 所有者:所属组 文件或目录名称</code><br>
+<code>chown root:bin test</code> 意思是把 <code>test</code> 文件的所有者和所属组分别设置为 <code>root</code> 和 <code>bin</code> 。</p>
+<p><code>chomd</code>  和 <code>chown</code> 针对目录进行操作的时候，需要加上大写参数 <code>-R</code> 来表示递归操作，即表示对目录内所有的文件进行整体操作。</p>
+<hr>
+<h4 id="533-sbit">5.3.3 SBIT</h4>
+<p><strong>SBIT</strong>（粘滞位），当目录被设置 <code>SBIT</code> 特殊权限位后，文件的其他人权限部分的 <code>x</code> 执行权限就会被替换成 <code>t</code> 或者 <code>T</code>，原本有 <code>x</code> 执行权限则会写成 <code>t</code>，原本没有 <code>x</code> 执行权限则会被写成 <code>T</code>。</p>
+<h4 id="特殊权限的数字表示法">特殊权限的数字表示法</h4>
+<table>
+<thead>
+<tr>
+<th><strong>SUID</strong></th>
+<th><strong>4</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SGID</strong></td>
+<td><strong>2</strong></td>
+</tr>
+<tr>
+<td><strong>SBIT</strong></td>
+<td><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<p>特殊权限法写在一般权宪法之前，<code>7 654</code> 意思是特殊权限是都有，文件所有者、文件所属组      以及其他用户的<code>可读</code> 、<code>可写</code>和<code>可执行</code>的权限分别是：<code>6</code>、<code>5</code>、<code>4</code>。</p>
+<p><strong>下面的表格做一个简单的示例</strong></p>
+<table>
+<thead>
+<tr>
+<th>字符表示</th>
+<th>数字表示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rwsrw-r--</td>
+<td>4 764</td>
+</tr>
+<tr>
+<td>rwxrw-r–</td>
+<td>764</td>
+</tr>
+<tr>
+<td>rwsrw-rwT</td>
+<td>5 766（原本所有者有 <code>可执行</code> 权限为，而其他用户没有 <code>可执行</code> 权限）</td>
+</tr>
+<tr>
+<td>rwSr-s-wT</td>
+<td>7 652（原本所有者、其他用户都没有 <code>可执行</code> 权限）</td>
+</tr>
+</tbody>
+</table>
+<p>因为如果是大写的特殊权限，那么代表原本没有这个权限，原本表示为 <code>-</code>。否则特殊权限应为小写字母。</p>
+<hr>
+<h3 id="54-文件的隐藏属性">5.4 文件的隐藏属性</h3>
+<p>默认情况下用户不能直接发觉，保障了系统安全性。</p>
+<h4 id="541-chattr">5.4.1 chattr</h4>
+<p>用于设置文件的隐藏权限，格式为 <code>chatter [参数] 文件</code>。<br>
+如果要添加隐藏权限，在 <code>chatter</code> 后加上 <code>+参数</code>，<br>
+移除隐藏权限，在 <code>chatter</code> 后加上 <code>-参数</code>。</p>
+<p>假设一个文件 <code>testfile</code> 被使用了 <code>chatter +i testfile</code> 命令，那么这个文件不能被进行修改。<br>
+如果想要删除这个文件，<code>rm testfile</code> 会提示权限不足（即使使用 <code>rm -f testfile</code> 依旧不行，甚至是 <code>root</code> 用户也不行），<br>
+那么我们需要先用下面的 <code>lsatter testfile</code> 命令查看这个文件的隐藏权限，<br>
+可以得知 <code>testfile</code> 文件有隐藏权限，<br>
+那么我们再使用 <code>chatter -i testfile</code> 来移除隐藏权限，<br>
+之后再使用 <code>rm testfile</code> 就可以成功删除文件。</p>
+<hr>
+<h4 id="542-lsattr">5.4.2 lsattr</h4>
+<p>用于查看文件的隐藏权限，配合 <code>chattr</code> 使用。</p>
+<hr>
+<h3 id="55-文件访问控制列表">5.5 文件访问控制列表</h3>
+<p>一般权限、特殊权限、隐藏权限都是对一类用户设置。<br>
+如果对普通文件和目录设置 ACL 就是针对指定的用户或用户组设置操作权限。</p>
+<p>另外，如果针对某个目录设置了 ACL，则目录中的文件会继承其 ACL；若针对文件设置了 ACL，则文件不再继承其所在目录的 ACL。</p>
+<h4 id="551-setfacl-命令">5.5.1 setfacl 命令</h4>
+<p>管理文件的 <code>ACL </code>规则，格式为 <code>setfacl [参数] 文件名称</code>。<br>
+使用 <code>setfacl</code> 命令可以针对单一用户或用户组、单一文件或目录来进行读/写/执行权限的控制。<br>
+如果要针对目录文件需要用 <code>-R</code> 递归参数，针对普通文件则使用 <code>-m</code> 参数。<br>
+如果要删除某个文件的 <code>ACL</code> ，这可以使用 <code>-b</code> 参数。</p>
+<p>例如：</p>
+<pre><code class="language-shell">[root@linux home]# setfacl -Rm u/g:chiperman:rwx testfile
+</code></pre>
+<p><code>-R</code> 是对一个目录设置 <code>facl</code> 的权限，<br>
+<code>-m</code> 指的是对文件设置 <code>facl</code> 的权限，<br>
+<code>u</code> 代表对一个用户进行权限设置，<br>
+也可以用 <code>g</code> 代替表示对一个组进行权限设置，<br>
+这里是对 <code>chiperman</code> 用户设置了 <code>rwx</code> 权限，<br>
+对于 <code>testfile</code> 目录进行的操作。<br>
+这个时候查看文件的权限最后一个 <code>.</code> 变为了 <code>+</code>，<br>
+这就代表我们已经对该文件设置了 <code>ACL</code>。</p>
+<figure data-type="image" tabindex="11"><img src="https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/2020/linux-study-note/Snipaste_2020-02-20_19-46-02.png" alt="image" loading="lazy"></figure>
+<hr>
+<h4 id="552-getfacl-命令">5.5.2 getfacl 命令</h4>
+<p>用 <code>getfacl</code> 可以查看对于这个文件设置的 <code>ACL</code> 信息，格式为 <code>getfacl 文件名称</code>。</p>
+<p>例如：</p>
+<pre><code class="language-shell">[root@linux home]# getfacl testfile/
+</code></pre>
+<p>可以看到已经针对于 <code>chiperman</code> 用户设置的 <code>rwx</code> 权限。</p>
+<figure data-type="image" tabindex="12"><img src="https://cdn.jsdelivr.net/gh/chiperman/Photos-storage/blog/2020/linux-study-note/Snipaste_2020-02-20_19-49-55.png" alt="image" loading="lazy"></figure>
+<hr>
+<h3 id="su-命令与-sudo-服务">su 命令与 sudo 服务</h3>
+<p>su 命令可以切换用户身份，使得当前用户不退出登录的情况下，切换到其他用户。</p>
+<p>例如：从 <code>root</code> 管理员切换到 <code>chiperman</code> 账户</p>
+<pre><code class="language-shell">[root@linux ~]# id
+uid=0(root) gid=0(root) groups=0(root)
+[root@linux ~]# su - chiperman
+Last login: Sun Feb 16 05:33:07 EST 2020 on :0
+</code></pre>
+<p><code>su</code> 命令和用户名之间有一个 <code>-</code>，意味着完全切换，把环境变量信息也变更为新用户的信息，建议添加 <code>-</code>。</p>
+<p>此外，从 root 管理员切换到普通用户不需要验证密码，相反则需要，也是为了安全保证。</p>
+<p>sudo 命令可以把特定的执行权限赋予给指定用户，可以避免泄露 root 密码，还能保证普通用户完成工作。格式为 <code>sudu [参数] 命令名称</code>。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-h</td>
+<td>列出帮助信息</td>
+</tr>
+<tr>
+<td>-l</td>
+<td>列出当前用户可执行的命令</td>
+</tr>
+<tr>
+<td>-u 用户名或 UID 值</td>
+<td>以指定的用户身份执行命令</td>
+</tr>
+<tr>
+<td>-k</td>
+<td>清空密码的有效时间，下次执行 sudo 时需要再次进行密码验证</td>
+</tr>
+<tr>
+<td>-b</td>
+<td>在后台执行指定的命令</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>更改询问密码的提示语</td>
+</tr>
+</tbody>
+</table>
+<p>中的来说，sudo 有以下功能：</p>
+<ol>
+<li>限制用户执行指定的命令</li>
+<li>记录用户执行的每一条命令</li>
+<li>配置文件（/etc/sudoers）提供集中的用户管理、权限与主机等参数</li>
+<li>验证密码的后 5 分钟内（默认值）无须再让用户再次验证密码</li>
+</ol>
+<p>如果担心直接修改配置文件出错，可以用 visudo 命令赋予权限。</p>
+<h2 id="day-06">Day 06</h2>
+<hr>
+<h3 id="6x-待定">6.x 待定</h3>
+<p>ihard 总个数</p>
+<p>bhard 总大小</p>
+<hr>
+<p>本文的封面图片来自 Unspalsh 的 <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@_imkiran?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Sai Kiran Anagani"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Sai Kiran Anagani</span></a></p>
+
+          </div>
+        </article>
+      </div>
+
+      <div class="near-post">
+        <div>
+          
+        </div>
+        <div>
+          
+        </div>
+      </div>
+
+      
+
+      <div class="valine">
+        
+      </div>
+
+      <div class="site-footer">
+  
+  <b>Theme: </b>
+  <a href="//github.com/chiperman/gridea-theme-porky"><b>Porky</b></a
+  ><b> | Powered by </b>
+  <a href="//open.gridea.dev"><b>Gridea</b></a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+    </div>
+  </div>
+</body>
+
+</html>
